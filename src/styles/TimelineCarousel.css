@@ -1,0 +1,192 @@
+.timeline-carousel-root {
+  width: 100%;
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.timeline-carousel-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2.5rem;
+}
+
+.timeline-carousel-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  background: linear-gradient(90deg, #223056, #334155);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.timeline-carousel-nav {
+  display: flex;
+  gap: 0.7rem;
+}
+
+.timeline-carousel-btn {
+  background: #fff;
+  border: 1.5px solid #334155;
+  border-radius: 50%;
+  width: 38px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #223056;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s, border 0.2s;
+  font-size: 0; /* Esconde texto extra, se houver */
+}
+.timeline-carousel-btn svg {
+  width: 20px;
+  height: 20px;
+  display: block;
+  color: inherit;
+}
+.timeline-carousel-btn:hover {
+  background: #223056;
+  color: #fff;
+  border-color: #22d3ee;
+}
+
+.timeline-carousel-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  min-height: 400px;
+}
+@media (min-width: 768px) {
+  .timeline-carousel-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* timeline-carousel-card */
+.timeline-carousel-card {
+  position: relative;
+  background: rgba(255,255,255,0.85);
+  border-radius: 1.2rem;
+  border: 1.5px solid #e0e7ef;
+  box-shadow: 0 2px 24px 0 rgba(34,211,238,0.08);
+  padding: 2.5rem 1.5rem 2rem 1.5rem;
+  min-height: 340px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  transition: box-shadow 0.3s, border 0.3s, transform 0.3s;
+  overflow: hidden;
+  z-index: 1;
+}
+.timeline-carousel-card:hover {
+  box-shadow: 0 0 32px 0 #22d3ee, 0 2px 32px 0 #34d399;
+  border: 1.5px solid #22d3ee;
+  transform: scale(1.04);
+  z-index: 2;
+}
+
+.timeline-carousel-card--active {
+  background: linear-gradient(135deg, #0f172a 0%, #334155 100%);
+  color: #fff;
+  border: 1.5px solid #22d3ee;
+  box-shadow: 0 0 32px 0 #22d3ee, 0 2px 32px 0 #34d399;
+  z-index: 3;
+}
+
+.timeline-carousel-card-neon {
+  position: absolute;
+  inset: 0;
+  border-radius: 1.2rem;
+  background: linear-gradient(90deg, #22d3ee44, #60a5fa33 80%);
+  filter: blur(16px);
+  z-index: 0;
+  pointer-events: none;
+}
+
+.timeline-carousel-year {
+  font-size: 2.7rem;
+  font-weight: 800;
+  color: #223056;
+  margin-bottom: 1.2rem;
+  background: none;
+  transition: color 0.3s, background 0.3s;
+}
+.timeline-carousel-year--active {
+  background: linear-gradient(90deg, #34d399, #22d3ee, #60a5fa);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  color: transparent;
+}
+
+.timeline-carousel-card-title {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #223056;
+  margin-bottom: 1rem;
+  transition: color 0.3s;
+}
+.timeline-carousel-card-title--active {
+  color: #fff;
+}
+
+.timeline-carousel-card-desc {
+  font-size: 1.08rem;
+  color: #334155;
+  line-height: 1.6;
+  transition: color 0.3s;
+}
+.timeline-carousel-card-desc--active {
+  color: #e0e7ef;
+}
+
+.timeline-carousel-dot {
+  position: absolute;
+  top: 1.2rem;
+  right: 1.2rem;
+  width: 14px;
+  height: 14px;
+  background: linear-gradient(90deg, #34d399, #22d3ee, #60a5fa);
+  border-radius: 50%;
+  box-shadow: 0 0 16px #22d3ee99;
+  animation: timeline-dot-pulse 1.2s infinite alternate;
+  z-index: 2;
+}
+@keyframes timeline-dot-pulse {
+  0% { box-shadow: 0 0 8px #22d3ee99; }
+  100% { box-shadow: 0 0 24px #22d3eecc; }
+}
+.timeline-carousel-bar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 7px;
+  background: linear-gradient(90deg, #34d399, #22d3ee, #60a5fa);
+  border-radius: 0 0 1.2rem 1.2rem;
+  z-index: 2;
+}
+
+.timeline-carousel-progress {
+  display: flex;
+  justify-content: center;
+  margin-top: 2.2rem;
+  gap: 0.5rem;
+}
+.timeline-carousel-progress-dot {
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background: #e0e7ef;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s, box-shadow 0.3s;
+}
+.timeline-carousel-progress-dot--active {
+  background: linear-gradient(90deg, #34d399, #22d3ee, #60a5fa);
+  box-shadow: 0 0 8px #22d3ee99;
+}

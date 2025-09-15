@@ -1,0 +1,399 @@
+.logistica-root {
+  min-height: 100vh;
+  background: #f8fafc;
+}
+
+/* HERO */
+.logistica-hero {
+  position: relative;
+  min-height: 340px;
+  display: flex;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  padding-top: 5rem;
+  padding-bottom: 0;
+}
+.logistica-hero-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.logistica-hero-text {
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 8rem;
+    padding-top: 8rem;
+}
+.logistica-hero-title {
+  font-size: 3.5rem;
+  font-weight: 900;
+  margin-bottom: 1.5rem;
+  line-height: 1.1;
+}
+
+.logistica-hero-title-gradient {
+  background: linear-gradient(90deg, #22d3ee, #60a5fa);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+.logistica-hero-title-light {
+  color: #e2e8f0;
+}
+.logistica-hero-subtitle {
+  font-size: 1.3rem;
+  color: #cbd5e1;
+  font-weight: 500;
+  margin-bottom: 2rem;
+  max-width: 700px;
+}
+
+/* CONTAINER */
+.logistica-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* SOLUÇÕES */
+.logistica-solucoes {
+  padding: 5rem 0;
+  background: #fff;
+}
+.logistica-solucoes-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.logistica-section-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #223056;
+  margin-bottom: 1rem;
+}
+.logistica-solucoes-desc {
+  font-size: 1.2rem;
+  color: #64748b;
+  max-width: 600px;
+  margin: 0 auto;
+}
+.logistica-solucoes-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2.5rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+@media (min-width: 1024px) {
+  .logistica-solucoes-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+.logistica-solucao-card {
+  background: #fff;
+  border-radius: 1.2rem;
+  box-shadow: 0 2px 24px 0 rgba(34,211,238,0.08);
+  transition: box-shadow 0.3s, transform 0.3s;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  border: solid 0.5px #e2e8f0;
+}
+.logistica-solucao-card:hover {
+  box-shadow: 0 0 32px 0 #2563eb, 0 2px 32px 0 #2563eb;
+  transform: scale(1.04);
+  z-index: 2;
+}
+.logistica-solucao-bar {
+  height: 4px;
+  width: 100%;
+}
+.gradient-orange { background: linear-gradient(90deg, #f59e42, #ef4444); }
+.gradient-green { background: linear-gradient(90deg, #10b981, #22d3ee); }
+.gradient-yellow { background: linear-gradient(90deg, #fde047, #f59e42); }
+.gradient-blue { background: linear-gradient(90deg, #3b82f6, #06b6d4); }
+.logistica-solucao-header {
+  padding-bottom: 1.5rem;
+}
+.logistica-solucao-header-flex {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+}
+.logistica-solucao-icon-bg {
+  width: 64px;
+  height: 64px;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0;
+  transition: transform 0.3s;
+}
+.logistica-solucao-card:hover .logistica-solucao-icon-bg {
+  transform: scale(1.1);
+}
+.logistica-solucao-icon {
+  color: #fff;
+  font-size: 2.5rem;
+}
+.solution-icon {
+  width: 48px;
+  height: 48px;
+}
+.logistica-solucao-header-content {
+  flex: 1;
+}
+.logistica-solucao-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #223056;
+  margin-bottom: 0.5rem;
+}
+.logistica-solucao-desc {
+  color: #64748b;
+  font-size: 1.08rem;
+  margin-bottom: 0;
+}
+.logistica-solucao-features {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.8rem 1.2rem;
+}
+.logistica-solucao-feature {
+  display: flex;
+  align-items: center;
+  color: #334155;
+  font-size: 1.05rem;
+}
+.logistica-solucao-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-right: 0.8rem;
+}
+
+/* PROCESSO */
+.logistica-processo {
+  padding: 5rem 0;
+  background: #0f172a;
+}
+.logistica-processo-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.logistica-section-title-gradient {
+  background: linear-gradient(90deg, #22d3ee, #60a5fa);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+.logistica-processo-desc {
+  font-size: 1.2rem;
+  color: #cbd5e1;
+  max-width: 600px;
+  margin: 0 auto;
+}
+.logistica-processo-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2.5rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+@media (min-width: 768px) {
+  .logistica-processo-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 1024px) {
+  .logistica-processo-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+.logistica-processo-card {
+  text-align: center;
+  background: transparent;
+}
+.logistica-processo-step-bg {
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(90deg, #06b6d4, #2563eb);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.5rem auto;
+}
+.logistica-processo-step {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #fff;
+}
+.logistica-processo-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 0.5rem;
+}
+.logistica-processo-desc2 {
+  color: #cbd5e1;
+  font-size: 1.05rem;
+}
+
+/* BENEFÍCIOS */
+.logistica-beneficios {
+  padding: 5rem 0;
+  background: linear-gradient(90deg, #f8fafc 0%, #f1f5f9 100%);
+}
+.logistica-beneficios-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.logistica-beneficios-desc {
+  font-size: 1.2rem;
+  color: #64748b;
+  max-width: 600px;
+  margin: 0 auto;
+}
+.logistica-beneficios-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2.5rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+@media (min-width: 768px) {
+  .logistica-beneficios-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 1024px) {
+  .logistica-beneficios-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+.logistica-beneficio-card {
+  background: #fff;
+  border-radius: 1.2rem;
+  box-shadow: 0 2px 24px 0 rgba(34,211,238,0.08);
+  transition: box-shadow 0.3s, transform 0.3s;
+  border: none;
+  text-align: center;
+}
+.logistica-beneficio-card:hover {
+  box-shadow: 0 0 32px 0 #0f172a;
+  transform: scale(1.04);
+  z-index: 2;
+}
+.logistica-beneficio-icon-bg {
+  width: 64px;
+  height: 64px;
+  background: linear-gradient(90deg, #334155, #64748b);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.5rem auto;
+}
+.logistica-beneficio-icon {
+  color: #fff;
+  font-size: 2rem;
+}
+.benefit-icon {
+  width: 32px;
+  height: 32px;
+}
+.logistica-beneficio-metric {
+  font-size: 2rem;
+  font-weight: 800;
+  background: linear-gradient(90deg, #334155, #64748b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  margin-bottom: 0.5rem;
+}
+.logistica-beneficio-desc2 {
+  color: #64748b;
+  font-size: 1.05rem;
+}
+
+/* TECNOLOGIAS */
+.logistica-tecnologias {
+  padding: 5rem 0;
+  background: #fff;
+}
+.logistica-tecnologias-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+  max-width: 1100px;
+  margin: 0 auto;
+  align-items: center;
+}
+@media (min-width: 1024px) {
+  .logistica-tecnologias-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+.logistica-tecnologias-img-wrap {
+  position: relative;
+  width: 100%;
+  height: 384px;
+  border-radius: 1.2rem;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logistica-tecnologias-img-blur {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, #22d3ee44, #60a5fa33 80%);
+  filter: blur(16px);
+  z-index: 0;
+  pointer-events: none;
+  border-radius: 1.2rem;
+}
+.logistica-tecnologias-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 1.2rem;
+  box-shadow: 0 0 32px 0 #22d3ee33;
+  position: relative;
+  z-index: 1;
+}
+.logistica-tecnologias-desc {
+  font-size: 1.2rem;
+  color: #64748b;
+  margin-bottom: 2rem;
+}
+.logistica-tecnologias-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.2rem 2rem;
+}
+.logistica-tecnologias-list-item {
+  display: flex;
+  align-items: center;
+  color: #223056;
+  font-size: 1.1rem;
+  transition: color 0.3s;
+}
+.logistica-tecnologias-dot {
+  width: 12px;
+  height: 12px;
+  background: linear-gradient(90deg, #22d3ee, #60a5fa);
+  border-radius: 50%;
+  margin-right: 0.8rem;
+}

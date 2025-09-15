@@ -1,0 +1,16 @@
+.home-hero__video-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: 1; /* Certifique-se que é menor que o conteúdo, mas maior que overlays */
+  pointer-events: none; /* Permite clicar nos botões acima do vídeo */
+}
+
+.home-hero__wrap,
+.home-hero__content-box {
+  position: relative;
+  z-index: 2;
+}

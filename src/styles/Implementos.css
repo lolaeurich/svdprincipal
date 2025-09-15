@@ -1,0 +1,262 @@
+.implementos-root {
+  min-height: 100vh;
+  background: #f8fafc;
+}
+
+/* HERO */
+.implementos-hero {
+  position: relative;
+  min-height: 340px;
+  display: flex;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  padding-top: 5rem;
+  padding-bottom: 0;
+  justify-content: center;
+}
+.implementos-hero-content {
+  text-align: center;
+  color: #fff;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 8rem 1.5rem 8rem 1.5rem;
+}
+
+.implementos-hero-title {
+  font-size: 3.5rem;
+  font-weight: 900;
+  margin-bottom: 1.5rem;
+  line-height: 1.1;
+}
+
+.implementos-hero-title-gradient {
+  background: linear-gradient(90deg, #22d3ee, #60a5fa);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+.implementos-hero-title-light {
+  color: linear-gradient(90deg, #22d3ee, #60a5fa);
+}
+.implementos-hero-subtitle {
+  font-size: 1.3rem;
+  color: #ffffff;
+  font-weight: 500;
+  margin-bottom: 0;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* SEARCHBAR */
+.implementos-searchbar {
+  padding: 2.5rem 0 2.5rem 0;
+  background: #f1f5f9;
+  position: sticky;
+  top: 80px;
+  z-index: 30;
+  box-shadow: 0 2px 12px 0 rgba(34, 52, 110, 0.05);
+}
+.implementos-searchbar-flex {
+  max-width: 700px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: stretch;
+}
+@media (min-width: 768px) {
+  .implementos-searchbar-flex {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+.implementos-searchbar-input-wrap {
+  position: relative;
+  flex: 1;
+  width: 100%;
+}
+.implementos-searchbar-icon {
+  position: absolute;
+  left: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #94a3b8;
+  width: 20px;
+  height: 20px;
+  z-index: 2;
+}
+.implementos-searchbar-input {
+  padding-left: 2.5rem;
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+  font-size: 1.1rem;
+  border: 1.5px solid #e2e8f0;
+  border-radius: 0.7rem;
+  width: 100%;
+  color: #223056;
+  background: #fff;
+}
+.implementos-searchbar-input:focus {
+  border-color: #fbbf24;
+  outline: none;
+}
+.implementos-searchbar-select-wrap {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.implementos-searchbar-filter-icon {
+  width: 20px;
+  height: 20px;
+  color: #64748b;
+}
+.implementos-searchbar-select {
+  width: 180px;
+  border-radius: 0.7rem;
+  border: 1.5px solid #e2e8f0;
+  background: #fff;
+  color: #223056;
+  font-size: 1.1rem;
+}
+
+/* GRID */
+.implementos-grid-section {
+  padding: 5rem 0;
+  background: #f8fafc;
+}
+.implementos-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2.5rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+@media (min-width: 768px) {
+  .implementos-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (min-width: 1200px) {
+  .implementos-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+.implementos-card {
+  background: #fff;
+  border-radius: 1.2rem;
+  box-shadow: 0 2px 24px 0 rgba(251,191,36,0.08);
+  transition: box-shadow 0.3s, transform 0.3s;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  border: none;
+}
+.implementos-card:hover {
+  box-shadow: 0 0 32px 0 #223056;
+  transform: scale(1.04);
+  z-index: 2;
+}
+.implementos-card-img-wrap {
+  position: relative;
+}
+.implementos-card-badge {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  z-index: 2;
+  background: linear-gradient(90deg, #223056, #60a5fa);
+  color: #fff;
+  border: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+  padding: 0.4rem 1rem;
+  border-radius: 1rem;
+}
+.implementos-card-img-aspect {
+  width: 100%;
+  aspect-ratio: 16/9;
+  overflow: hidden;
+}
+.implementos-card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s;
+}
+.implementos-card:hover .implementos-card-img {
+  transform: scale(1.1);
+}
+.implementos-card-header {
+  padding-bottom: 0.5rem;
+}
+.implementos-card-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #223056;
+  margin-bottom: 0.5rem;
+}
+.implementos-card-desc {
+  color: #64748b;
+  font-size: 1.05rem;
+  min-height: 40px;
+  margin-bottom: 0;
+}
+.implementos-card-content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.implementos-card-specs {
+  margin-bottom: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.implementos-card-spec {
+  display: flex;
+  align-items: center;
+  color: #334155;
+  font-size: 1.05rem;
+}
+.implementos-card-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-right: 0.8rem;
+  background: linear-gradient(90deg, #223056, #60a5fa);
+}
+.implementos-card-price-label {
+  color: #64748b;
+  font-size: 0.95rem;
+}
+.implementos-card-price {
+  font-size: 2rem;
+  font-weight: 800;
+  background: linear-gradient(90deg, #223056, #60a5fa);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  margin-bottom: 1rem;
+}
+.implementos-card-btn {
+  width: 100%;
+  background: linear-gradient(90deg, #223056, #60a5fa);
+  color: #fff;
+  font-weight: 600;
+  border-radius: 0.7rem;
+  font-size: 1.1rem;
+  padding: 0.9rem 0;
+  border: none;
+  transition: background 0.2s, color 0.2s;
+}
+.implementos-card-btn:hover {
+  background: linear-gradient(90deg, #64748b, #94a3b8);
+  color: #fff;
+}

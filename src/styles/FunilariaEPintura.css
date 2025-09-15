@@ -1,0 +1,322 @@
+.funilaria-root {
+  min-height: 100vh;
+  background: #f8fafc;
+}
+
+/* HERO */
+.funilaria-hero {
+  position: relative;
+  min-height: 340px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #0f172a;
+  padding-top: 5rem;
+  padding-bottom: 0;
+}
+.funilaria-hero-bg {
+  position: absolute;
+  inset: 0;
+  background-image: url('https://images.unsplash.com/photo-1617097232230-e5ce73c75a40?w=1200');
+  background-size: cover;
+  background-position: center;
+  opacity: 0.20;
+  z-index: 1;
+}
+/* Purple Layer */
+.funilaria-hero-layer,
+.funilaria-hero-layer-purple {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+}
+.funilaria-hero-layer-purple {
+  background: linear-gradient(120deg, #330781 85%, #a5b4fc 100%, transparent 100%);
+  opacity: 0.82;
+  mix-blend-mode: multiply;
+}
+.funilaria-hero-content {
+  position: relative;
+  z-index: 3;
+  text-align: center;
+  color: #fff;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 8rem 1.5rem 8rem 1.5rem;
+}
+
+.funilaria-hero-title {
+  font-size: 3.5rem;
+  font-weight: 900;
+  margin-bottom: 1.5rem;
+  line-height: 1.1;
+}
+
+/* Azul com roxo */
+.funilaria-hero-title-gradient.funilaria-hero-title-gradient-purpleblue {
+  background: linear-gradient(90deg, #d0e9f5, #9de3ff 80%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+.funilaria-hero-subtitle {
+  font-size: 1.3rem;
+  color: #f1f5f9;
+  font-weight: 500;
+  margin-bottom: 0;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* CONTAINER */
+.funilaria-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* SERVIÇOS */
+.funilaria-servicos {
+  padding: 5rem 0;
+  background: #fff;
+}
+.funilaria-servicos-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.funilaria-section-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #223056;
+  margin-bottom: 1rem;
+}
+.funilaria-servicos-desc {
+  font-size: 1.2rem;
+  color: #64748b;
+  max-width: 600px;
+  margin: 0 auto;
+}
+.funilaria-servicos-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2.5rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+@media (min-width: 768px) {
+  .funilaria-servicos-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (min-width: 1200px) {
+  .funilaria-servicos-grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    max-width: 1600px; /* aumenta a largura total do grid */
+  }
+}
+.funilaria-servico-card {
+  min-width: 0;
+  width: 100%;
+  max-width: 370px; /* aumenta a largura máxima dos cards */
+  margin-left: auto;
+  margin-right: auto;
+  background: #fff;
+  border-radius: 1.2rem;
+  box-shadow: 0 2px 24px 0 rgba(34,211,238,0.08);
+  transition: box-shadow 0.3s, transform 0.3s;
+  overflow: hidden;
+  text-align: center;
+  border: solid 0.5px #e2e8f0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.funilaria-servico-card:hover {
+  box-shadow: 0 0 32px 0 #7c3aed, 0 2px 32px 0 #38bdf8;
+  transform: scale(1.04);
+  z-index: 2;
+}
+@media (min-width: 768px) {
+  .funilaria-servico-card {
+    max-width: 420px;
+  }
+}
+@media (min-width: 1200px) {
+  .funilaria-servico-card {
+    max-width: 440px;
+  }
+}
+.funilaria-servico-icon-bg {
+  width: 80px;
+  height: 80px;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.5rem auto;
+  transition: transform 0.3s;
+}
+.gradient-red { background: linear-gradient(135deg, #ef4444, #f59e42); }
+.gradient-blue { background: linear-gradient(135deg, #3b82f6, #06b6d4); }
+.gradient-green { background: linear-gradient(135deg, #10b981, #22d3ee); }
+.gradient-purple { background: linear-gradient(135deg, #a78bfa, #6366f1); }
+.funilaria-servico-icon {
+  color: #fff;
+  font-size: 2.5rem;
+}
+.service-icon {
+  width: 40px;
+  height: 40px;
+}
+.funilaria-servico-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #223056;
+  margin-bottom: 0.5rem;
+}
+.funilaria-servico-desc {
+  color: #64748b;
+  font-size: 1.05rem;
+  min-height: 40px;
+  margin-bottom: 0;
+}
+
+/* BEFORE/AFTER */
+.funilaria-beforeafter {
+  padding: 5rem 0;
+  background: #0f172a;
+}
+.funilaria-beforeafter-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.funilaria-section-title-gradient {
+  background: linear-gradient(90deg, #22d3ee, #60a5fa);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+.funilaria-beforeafter-desc {
+  font-size: 1.2rem;
+  color: #cbd5e1;
+  max-width: 600px;
+  margin: 0 auto;
+}
+.funilaria-beforeafter-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2.5rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+@media (min-width: 1024px) {
+  .funilaria-beforeafter-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+.funilaria-beforeafter-card {
+  background: transparent;
+}
+.funilaria-beforeafter-service {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+.funilaria-beforeafter-imgs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem;
+  position: relative;
+  align-items: center;
+}
+.funilaria-beforeafter-img-wrap {
+  position: relative;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+.funilaria-beforeafter-img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+}
+.funilaria-beforeafter-img-before {
+  filter: grayscale(1);
+  transition: filter 0.5s;
+}
+.funilaria-beforeafter-img-wrap:hover .funilaria-beforeafter-img-before {
+  filter: grayscale(0);
+}
+.funilaria-beforeafter-label {
+  position: absolute;
+  bottom: 10px;
+  padding: 0.3rem 1rem;
+  border-radius: 0.7rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  z-index: 2;
+}
+.funilaria-beforeafter-label-left {
+  left: 10px;
+  background: rgba(0,0,0,0.5);
+  color: #fff;
+}
+.funilaria-beforeafter-label-right {
+  right: 10px;
+  background: linear-gradient(90deg, #22d3ee, #60a5fa);
+  color: #fff;
+}
+.funilaria-beforeafter-logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 64px;
+  height: 64px;
+  background: rgba(255,255,255,0.85);
+  backdrop-filter: blur(4px);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #223056;
+  font-weight: 800;
+  font-size: 1.5rem;
+  z-index: 10;
+  box-shadow: 0 2px 16px 0 #22305622;
+}
+
+/* CTA */
+.funilaria-cta {
+  padding: 5rem 0;
+  background: #f8fafc;
+}
+.funilaria-cta-content {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto;
+}
+.funilaria-cta-desc {
+  font-size: 1.2rem;
+  color: #64748b;
+  margin-bottom: 2.5rem;
+}
+.funilaria-cta-btn {
+  background: linear-gradient(90deg, #3a1f9d, #3b82f6);
+  color: #fff;
+  border: none;
+  border-radius: 0.7rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  padding: 0.9rem 2.5rem;
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+}
+.funilaria-cta-btn:hover {
+  opacity: 0.9;
+}

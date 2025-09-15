@@ -1,0 +1,37 @@
+.custom-textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-family: inherit;
+  resize: vertical;
+  outline: none;
+  transition: border-color 0.2s ease;
+  background-color: #fff;
+}
+
+.custom-textarea:focus {
+  border-color: #1976d2;
+}
+
+
+.input, .textarea {
+  display: block;
+  width: 100%;
+  padding: 0.75rem 1rem; /* p-3 */
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #374151;
+  background-color: #fff; /* Fundo branco para os inputs */
+  background-clip: padding-box;
+  border: 1px solid #d1d5db; /* Cor da borda */
+  border-radius: 0.5rem; /* rounded-lg */
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.input:focus, .textarea:focus {
+  outline: none;
+  border-color: #2563eb; /* Borda azul ao focar */
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.25);
+}

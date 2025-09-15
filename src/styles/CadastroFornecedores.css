@@ -1,0 +1,142 @@
+.cadastroforn-root {
+  min-height: 100vh;
+  background: #f8fafc;
+}
+
+/* HERO */
+.cadastroforn-hero {
+  position: relative;
+  min-height: 340px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #0f172a 80%, #334155 100%);
+  padding-top: 5rem;
+  padding-bottom: 0;
+  overflow: hidden;
+}
+.cadastroforn-hero-bg {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 50% 90%, rgba(6,182,212,0.15), transparent 50%);
+  z-index: 1;
+}
+.cadastroforn-hero-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  color: #fff;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 5rem 1.5rem 4rem 1.5rem;
+}
+.cadastroforn-hero-icon {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 2rem auto;
+  color: #22d3ee;
+}
+.cadastroforn-hero-title {
+  font-size: 3.5rem;
+  font-weight: 900;
+  margin-bottom: 1.5rem;
+  line-height: 1.1;
+}
+
+.cadastroforn-hero-title-gradient {
+  background: linear-gradient(90deg, #22d3ee, #2563eb 80%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+.cadastroforn-hero-desc {
+  font-size: 1.3rem;
+  color: #f1f5f9;
+  font-weight: 500;
+  margin-bottom: 0;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* FORM */
+.cadastroforn-form-section {
+  padding: 5rem 0;
+  background: #f8fafc;
+}
+.cadastroforn-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+.cadastroforn-card {
+  background: #fff;
+  border-radius: 1.2rem;
+  box-shadow: 0 2px 24px 0 rgba(34,211,238,0.08);
+  border: none;
+  padding: 2rem 1.5rem;
+}
+.cadastroforn-form-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #223056;
+  margin-bottom: 0.5rem;
+}
+.cadastroforn-form-desc {
+  color: #64748b;
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+.cadastroforn-form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.cadastroforn-form-block-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #334155;
+  border-bottom: 1.5px solid #e2e8f0;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+.cadastroforn-form-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+@media (min-width: 768px) {
+  .cadastroforn-form-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+.cadastroforn-label {
+  display: block;
+  color: #334155;
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+.cadastroforn-btn-wrap {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 1.5rem;
+}
+.cadastroforn-btn {
+  background: linear-gradient(90deg, #22d3ee, #2563eb 80%);
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 700;
+  padding: 0.9rem 2.5rem;
+  border-radius: 0.8rem;
+  border: none;
+  box-shadow: 0 2px 16px 0 #22d3ee33;
+  transition: background 0.2s, transform 0.2s;
+}
+.cadastroforn-btn:hover {
+  background: linear-gradient(90deg, #2563eb, #22d3ee 80%);
+  transform: translateY(-2px) scale(1.04);
+  color: #fff;
+}

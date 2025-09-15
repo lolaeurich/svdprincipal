@@ -1,0 +1,391 @@
+/* Container principal */
+.min-h-screen {
+  min-height: 100vh;
+}
+
+/* Hero Section */
+.hero-section {
+  min-height: 340px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 5%;
+  padding-bottom: 0;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.2); /* bg-black/20 */
+}
+
+.hero-content {
+  width: 100%;
+  max-width: 72rem;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  position: relative;
+  z-index: 2;
+  padding-top: 5%;
+}
+
+.hero-text {
+  text-align: center;
+  color: #fff;
+}
+.hero-title {
+  font-size: 3.5rem;
+  font-weight: 900;
+  margin-bottom: 2rem;
+  letter-spacing: -1px;
+  background: linear-gradient(to right, #34d399, #22d3ee, #60a5fa);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  text-shadow: 0 4px 24px #16213e99;
+}
+@media (min-width: 768px) {
+  .hero-title {
+    font-size: 5rem;
+  }
+}
+.hero-subtitle {
+  font-size: 2rem;
+  color: #e0e7ef;
+  font-weight: 500;
+  margin-bottom: 0;
+  text-shadow: 0 2px 8px #16213e99;
+  max-width: 900px;
+}
+@media (min-width: 768px) {
+  .hero-subtitle {
+    font-size: 2.3rem;
+  }
+}
+
+/* Benefits Section */
+.benefits-section {
+  padding: 4rem 0 3rem 0;
+  background: #f8fafc;
+}
+
+.benefits-title {
+  font-size: 2.3rem;
+  font-weight: 700;
+  margin-bottom: 2.5rem;
+  text-align: center;
+  color: #223056;
+}
+
+.benefits-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+@media (min-width: 768px) {
+  .benefits-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 1200px) {
+  .benefits-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.5rem;
+  }
+}
+
+.benefit-card {
+  background: #fff;
+  border-radius: 1.2rem;
+  box-shadow: 0 2px 24px 0 rgba(34,211,238,0.08);
+  transition: box-shadow 0.3s, transform 0.3s;
+  padding: 0;
+  min-width: 0;
+  width: 100%;
+  max-width: 540px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.benefit-card-wide {
+  max-width: 600px;
+}
+.benefit-card:hover {
+  box-shadow: 0 0 32px 0 #1e3a8a, 0 2px 32px 0 #1d4ed8;
+  transform: scale(1.04);
+  z-index: 2;
+}
+
+.benefit-card-content {
+  padding: 2.5rem 2rem 2rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 1%;
+}
+
+.benefit-icon-wrapper {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  margin-bottom: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #e0e7ef;
+}
+
+.benefit-icon {
+  width: 2.2rem;
+  height: 2.2rem;
+}
+
+.benefit-item-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #223056;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.benefit-description {
+  color: #334155;
+  font-size: 1.05rem;
+  text-align: center;
+}
+
+/* Culture Section */
+.culture-section {
+  padding-top: 5rem; /* py-20 */
+  padding-bottom: 5rem; /* py-20 */
+  background-color: #f9fafb; /* bg-gray-50 */
+}
+
+.culture-grid {
+  display: grid;
+  gap: 3rem; /* gap-12 */
+  align-items: center;
+  max-width: 84rem; /* max-w-7xl */
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (min-width: 1024px) {
+  .culture-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr)); /* lg:grid-cols-2 */
+  }
+}
+
+.culture-title {
+  font-size: 2.25rem; /* text-4xl */
+  font-weight: 700; /* font-bold */
+  color: #1e3a8a; /* text-blue-900 */
+  margin-bottom: 1.5rem; /* mb-6 */
+}
+
+.culture-description {
+  font-size: 1.125rem; /* text-lg */
+  color: #374151; /* text-gray-700 */
+  margin-bottom: 1.5rem; /* mb-6 */
+  line-height: 1.625; /* leading-relaxed */
+}
+
+.culture-points {
+  margin-top: 1rem; /* space-y-4 */
+}
+.culture-points > * + * {
+  margin-top: 1rem; /* space-y-4 */
+}
+
+.culture-point-item {
+  display: flex;
+  align-items: center;
+}
+
+.culture-point-bullet {
+  width: 0.75rem; /* w-3 */
+  height: 0.75rem; /* h-3 */
+  border-radius: 9999px; /* rounded-full */
+  margin-right: 1rem; /* mr-4 */
+}
+.blue-bullet { background-color: #2563eb; } /* bg-blue-600 */
+.red-bullet { background-color: #dc2626; } /* bg-red-600 */
+.green-bullet { background-color: #16a34a; } /* bg-green-600 */
+.orange-bullet { background-color: #ea580c; } /* bg-orange-600 */
+
+.culture-point-text {
+  font-size: 1.125rem; /* text-lg */
+  font-weight: 500; /* font-medium */
+}
+
+.culture-image-wrapper {
+  aspect-ratio: 1 / 1; /* aspect-square */
+}
+@media (min-width: 1024px) {
+  .culture-image-wrapper {
+    aspect-ratio: 16 / 9; /* lg:aspect-video */
+  }
+}
+
+.culture-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 1rem; /* rounded-2xl */
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04); /* shadow-xl */
+}
+
+/* Application Form Section */
+.application-form-section {
+  padding-top: 5rem; /* py-20 */
+  padding-bottom: 5rem; /* py-20 */
+}
+
+.application-form-wrapper {
+  max-width: 56rem; /* max-w-4xl */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.form-title-main {
+  font-size: 2.25rem; /* text-4xl */
+  font-weight: 700; /* font-bold */
+  color: #1e3a8a; /* text-blue-900 */
+  margin-bottom: 1.5rem; /* mb-6 */
+  text-align: center;
+}
+
+.form-subtitle-main {
+  font-size: 1.25rem; /* text-xl */
+  color: #4b5563; /* text-gray-600 */
+  text-align: center;
+  margin-bottom: 3rem; /* mb-12 */
+}
+
+.form-card {
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04); /* shadow-xl */
+}
+
+.form-card-title {
+  font-size: 1.5rem; /* text-2xl */
+  font-weight: 700; /* font-bold */
+  color: #1e3a8a; /* text-blue-900 */
+}
+
+.form-card-subtitle {
+  color: #4b5563; /* text-gray-600 */
+}
+
+.form-space {
+  margin-top: 1.5rem; /* space-y-6 */
+}
+.form-space > * + * {
+  margin-top: 1.5rem; /* space-y-6 */
+}
+
+.form-grid {
+  display: grid;
+  gap: 1.5rem; /* gap-6 */
+}
+@media (min-width: 768px) {
+  .form-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr)); /* md:grid-cols-2 */
+  }
+}
+
+.form-label {
+  display: block;
+  font-size: 0.875rem; /* text-sm */
+  font-weight: 500; /* font-medium */
+  color: #374151; /* text-gray-700 */
+  margin-bottom: 0.5rem; /* mb-2 */
+}
+
+.upload-box {
+  border: 2px dashed #d1d5db; /* border-2 border-dashed border-gray-300 */
+  border-radius: 0.5rem; /* rounded-lg */
+  padding: 2rem; /* p-8 */
+  text-align: center;
+}
+
+.upload-icon {
+  width: 3rem; /* w-12 */
+  height: 3rem; /* h-12 */
+  color: #9ca3af; /* text-gray-400 */
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1rem; /* mb-4 */
+}
+
+.upload-title {
+  font-size: 1.125rem; /* text-lg */
+  font-weight: 500; /* font-medium */
+  color: #374151; /* text-gray-700 */
+  margin-bottom: 0.5rem; /* mb-2 */
+}
+
+.upload-info {
+  color: #6b7280; /* text-gray-500 */
+  margin-bottom: 1rem; /* mb-4 */
+}
+
+.submit-button {
+  width: 100%; /* w-full */
+  background-color: #2563eb; /* bg-blue-600 */
+  font-size: 1.125rem; /* text-lg */
+  padding-top: 1rem; /* py-4 */
+  padding-bottom: 1rem; /* py-4 */
+}
+.submit-button:hover {
+  background-color: #1d4ed8; /* hover:bg-blue-700 */
+}
+
+.send-icon {
+  width: 1.25rem; /* w-5 */
+  height: 1.25rem; /* h-5 */
+  margin-right: 0.5rem; /* mr-2 */
+}
+
+/* CTA Section */
+.cta-section {
+  padding-top: 5rem; /* py-20 */
+  padding-bottom: 5rem; /* py-20 */
+  background: linear-gradient(to right, #f97316, #facc15, #4ade80); /* bg-gradient-to-r from-orange-500 via-yellow-500 to-green-400 */
+}
+
+.cta-content {
+  text-align: center;
+  color: #fff;
+}
+
+.cta-title {
+  font-size: 2.25rem; /* text-4xl */
+  font-weight: 700; /* font-bold */
+  margin-bottom: 1.5rem; /* mb-6 */
+}
+
+.cta-subtitle {
+  font-size: 1.25rem; /* text-xl */
+  margin-bottom: 2rem; /* mb-8 */
+  max-width: 42rem; /* max-w-2xl */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cta-button {
+  background-color: #fff; /* bg-white */
+  color: #1e3a8a; /* text-blue-900 */
+  font-size: 1.125rem; /* text-lg */
+  padding-left: 2rem; /* px-8 */
+  padding-right: 2rem; /* px-8 */
+  padding-top: 0.75rem; /* py-3 */
+  padding-bottom: 0.75rem; /* py-3 */
+}
+.cta-button:hover {
+  background-color: #f3f4f6; /* hover:bg-gray-100 */
+}

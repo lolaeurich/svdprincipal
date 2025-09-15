@@ -1,0 +1,183 @@
+.mei-root {
+  min-height: 100vh;
+  background: #f8fafc;
+}
+
+/* HERO */
+.mei-hero {
+  position: relative;
+  min-height: 340px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #0f172a;
+  padding-top: 5rem;
+  padding-bottom: 0;
+  overflow: hidden;
+}
+.mei-hero-bg {
+  position: absolute;
+  inset: 0;
+  background-image: url('https://images.unsplash.com/photo-1613203091108-350795353592?w=1200');
+  background-size: cover;
+  background-position: center;
+  opacity: 0.20;
+  z-index: 1;
+}
+.mei-hero-layer {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, #0f172a 90%, rgba(15,23,42,0.8) 100%, transparent 100%);
+  z-index: 2;
+}
+.mei-hero-content {
+  position: relative;
+  z-index: 3;
+  text-align: center;
+  color: #fff;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 4rem 1.5rem 4rem 1.5rem;
+}
+.mei-hero-icon {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 2rem auto;
+  color: #34d399;
+}
+.mei-hero-title {
+  font-size: 2.2rem;
+  font-weight: 900;
+  margin-bottom: 1.5rem;
+  line-height: 1.1;
+}
+@media (min-width: 480px) {
+  .mei-hero-title {
+    font-size: 2.7rem;
+  }
+}
+@media (min-width: 768px) {
+  .mei-hero-title {
+    font-size: 4.5rem;
+  }
+}
+.mei-hero-title-gradient {
+  background: linear-gradient(90deg, #34d399, #10b981 80%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+.mei-hero-subtitle {
+  font-size: 1.3rem;
+  color: #f1f5f9;
+  font-weight: 500;
+  margin-bottom: 0;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* CONTAINER */
+.mei-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* BENEFITS */
+.mei-benefits-section {
+  padding: 5rem 0;
+  background: #fff;
+}
+.mei-benefits-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.mei-benefits-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #223056;
+  margin-bottom: 1rem;
+}
+.mei-benefits-desc {
+  font-size: 1.2rem;
+  color: #64748b;
+  max-width: 600px;
+  margin: 0 auto;
+}
+.mei-benefits-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2.5rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+@media (min-width: 768px) {
+  .mei-benefits-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+.mei-benefit-card {
+  background: #fff;
+  border-radius: 1.2rem;
+  box-shadow: 0 2px 24px 0 rgba(34,211,238,0.08);
+  transition: box-shadow 0.3s, transform 0.3s;
+  overflow: hidden;
+  text-align: center;
+  border: solid 01px #e0f2fe;
+}
+.mei-benefit-card:hover {
+  box-shadow: 0 0 32px 0 #10b981, 0 2px 32px 0 #04794e;
+  transform: scale(1.04);
+  z-index: 2;
+}
+.mei-benefit-icon-bg {
+  width: 80px;
+  height: 80px;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.5rem auto;
+  transition: transform 0.3s;
+}
+.mei-benefit-icon {
+  color: #fff;
+  font-size: 2.5rem;
+}
+.mei-benefit-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #223056;
+  margin-bottom: 0.5rem;
+}
+.mei-benefit-desc {
+  color: #64748b;
+  font-size: 1.05rem;
+  min-height: 40px;
+  margin-bottom: 0;
+}
+.mei-btn-wrap {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+}
+.mei-btn-cta {
+  background: linear-gradient(90deg, #34d399, #10b981 80%);
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 700;
+  padding: 1rem 2.5rem;
+  border-radius: 0.8rem;
+  border: none;
+  box-shadow: 0 2px 16px 0 #10b98133;
+  transition: background 0.2s, transform 0.2s;
+  width: 40%;
+}
+.mei-btn-cta:hover {
+  background: linear-gradient(90deg, #10b981, #19815b 80%);
+  transform: translateY(-2px) scale(1.04);
+  color: #fff;
+}

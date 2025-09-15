@@ -1,0 +1,530 @@
+.transporte-root {
+  min-height: 100vh;
+  background: #f8fafc;
+}
+
+/* HERO */
+.transporte-hero {
+  position: relative;
+  padding: 8rem 0 0 0;
+  background: linear-gradient(135deg, #0f172a 0%, #334155 100%);
+  overflow: hidden;
+}
+.transporte-hero-bg {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 70% 30%, rgba(6,182,212,0.15), transparent 50%);
+  z-index: 1;
+}
+.transporte-hero-container {
+  position: relative;
+  z-index: 2;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+.transporte-hero-text {
+  text-align: center;
+  color: #fff;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+.transporte-hero-title {
+  font-size: 2.2rem;
+  font-weight: 900;
+  margin-bottom: 1.5rem;
+  line-height: 1.1;
+}
+@media (min-width: 480px) {
+  .transporte-hero-title {
+    font-size: 2.7rem;
+  }
+}
+@media (min-width: 768px) {
+  .transporte-hero-title {
+    font-size: 4.5rem;
+  }
+}
+.transporte-hero-title-gradient {
+  background: linear-gradient(90deg, #22d3ee, #60a5fa);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+.transporte-hero-title-light {
+  background: linear-gradient(90deg, #22d3ee, #60a5fa);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+.transporte-hero-subtitle {
+  font-size: 1.5rem;
+  color: #cbd5e1;
+  font-weight: 500;
+  margin-bottom: 0;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* CONTAINER */
+.transporte-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* SEÇÃO SERVIÇOS */
+.transporte-servicos {
+  padding: 5rem 0;
+  background: #f1f5f9;
+}
+.transporte-section-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #223056;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+.transporte-servicos-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2.5rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+@media (min-width: 1024px) {
+  .transporte-servicos-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+.transporte-servico-card {
+  background: #fff;
+  border-radius: 1.2rem;
+  box-shadow: 0 2px 24px 0 rgba(34,211,238,0.08);
+  transition: box-shadow 0.3s, transform 0.3s;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  border: none;
+}
+.transporte-servico-card:hover {
+  box-shadow: 0 0 32px 0 #2563eb, 0 2px 32px 0 #2563eb;
+  transform: scale(1.04);
+  z-index: 2;
+}
+.transporte-servico-bar {
+  height: 8px;
+  width: 100%;
+}
+.gradient-blue { background: linear-gradient(90deg, #3b82f6, #06b6d4); }
+.gradient-green { background: linear-gradient(90deg, #10b981, #22d3ee); }
+.gradient-purple { background: linear-gradient(90deg, #8b5cf6, #6366f1); }
+.transporte-servico-header {
+  padding-bottom: 1.5rem;
+  text-align: center;
+}
+.transporte-servico-icon-bg {
+  width: 80px;
+  height: 80px;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.5rem auto;
+  transition: transform 0.3s;
+}
+.transporte-servico-card:hover .transporte-servico-icon-bg {
+  transform: scale(1.1);
+}
+.transporte-servico-icon {
+  color: #fff;
+  font-size: 2.5rem;
+}
+.service-icon {
+  width: 48px;
+  height: 48px;
+}
+.transporte-servico-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #223056;
+  margin-bottom: 1rem;
+}
+.transporte-servico-desc {
+  color: #64748b;
+  font-size: 1.08rem;
+  margin-bottom: 0;
+}
+.transporte-servico-list {
+  margin: 2rem 0 0 0;
+  padding: 0;
+  list-style: none;
+}
+.transporte-servico-list-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  color: #334155;
+  font-size: 1.05rem;
+}
+.transporte-servico-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-right: 0.8rem;
+}
+.transporte-servico-btn {
+  width: 100%;
+  margin-top: 2rem;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 0.7rem;
+  font-size: 1.1rem;
+  padding: 0.9rem 0;
+  border: none;
+  transition: opacity 0.2s;
+}
+.transporte-servico-btn:hover {
+  opacity: 0.9;
+}
+
+/* FROTA */
+.transporte-frota {
+  padding: 5rem 0;
+  background: #2563eb;
+}
+.transporte-frota-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.transporte-frota-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  background: white;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  margin-bottom: 1rem;
+}
+.transporte-frota-desc {
+  font-size: 1.2rem;
+  color: #cbd5e1;
+  max-width: 600px;
+  margin: 0 auto;
+}
+.transporte-frota-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+@media (min-width: 768px) {
+  .transporte-frota-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 1024px) {
+  .transporte-frota-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+.transporte-frota-card {
+  background: rgba(30,41,59,0.7);
+  border-radius: 1.2rem;
+  border: 1px solid #334155;
+  box-shadow: 0 2px 24px 0 rgba(34,211,238,0.08);
+  text-align: center;
+  transition: box-shadow 0.3s, transform 0.3s;
+  backdrop-filter: blur(2px);
+}
+.transporte-frota-card:hover {
+  box-shadow: 0 0 32px 0 #22d3ee, 0 2px 32px 0 #34d399;
+  transform: scale(1.04);
+  z-index: 2;
+}
+.transporte-frota-quantidade {
+  font-size: 2.5rem;
+  font-weight: 800;
+  background: linear-gradient(90deg, #34d399, #22d3ee, #60a5fa);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  margin-bottom: 0.5rem;
+}
+.transporte-frota-tipo {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 0.3rem;
+}
+.transporte-frota-capacidade {
+  color: #cbd5e1;
+  font-size: 1rem;
+}
+
+/* ARMAZÉNS */
+.transporte-armazens {
+  padding: 5rem 0;
+  background: #fff;
+}
+.transporte-armazens-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.transporte-armazens-desc {
+  font-size: 1.2rem;
+  color: #64748b;
+  max-width: 600px;
+  margin: 0 auto;
+}
+.transporte-armazens-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2.5rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+@media (min-width: 1024px) {
+  .transporte-armazens-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+.transporte-armazem-card {
+  background: #fff;
+  border-radius: 1.2rem;
+  box-shadow: 0 2px 24px 0 rgba(34,211,238,0.08);
+  overflow: hidden;
+  transition: box-shadow 0.3s, transform 0.3s;
+  border: 0.5px solid #dadadb;
+  display: flex;
+  flex-direction: column;
+}
+.transporte-armazem-card:hover {
+  box-shadow: 0 0 32px 0 #2563eb, 0 2px 32px 0 #2563eb;
+  transform: scale(1.04);
+  z-index: 2;
+}
+.transporte-armazem-img-wrap {
+  width: 100%;
+  aspect-ratio: 16/9;
+  overflow: hidden;
+}
+.transporte-armazem-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s;
+}
+.transporte-armazem-card:hover .transporte-armazem-img {
+  transform: scale(1.1);
+}
+.transporte-armazem-content {
+  padding: 2rem 1.5rem;
+}
+.transporte-armazem-local {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.transporte-armazem-local-icon {
+  width: 1.2rem;
+  height: 1.2rem;
+  color: #06b6d4;
+  margin-right: 0.5rem;
+}
+.transporte-armazem-local-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #223056;
+}
+.transporte-armazem-info {
+  color: #64748b;
+  font-size: 1.05rem;
+  margin-bottom: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+.transporte-armazem-info-bold {
+  font-weight: 600;
+  color: #223056;
+  margin-left: 0.5rem;
+}
+.transporte-armazem-btn {
+  width: 100%;
+  margin-top: 1rem;
+  border: 1.5px solid #06b6d4;
+  color: #06b6d4;
+  font-weight: 600;
+  border-radius: 0.7rem;
+  font-size: 1.1rem;
+  padding: 0.9rem 0;
+  background: #f0f9ff;
+  transition: background 0.2s, color 0.2s;
+}
+.transporte-armazem-btn:hover {
+  background: #e0f2fe;
+  color: #0891b2;
+}
+
+/* TECNOLOGIA */
+.transporte-tecnologia {
+  padding: 5rem 0;
+  background: linear-gradient(90deg, #0f172a 0%, #334155 100%);
+}
+.transporte-tecnologia-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+  max-width: 1100px;
+  margin: 0 auto;
+  align-items: center;
+}
+@media (min-width: 1024px) {
+  .transporte-tecnologia-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+.transporte-tecnologia-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  background: linear-gradient(90deg, #22d3ee, #60a5fa);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  margin-bottom: 1.5rem;
+}
+.transporte-tecnologia-desc {
+  font-size: 1.2rem;
+  color: #cbd5e1;
+  margin-bottom: 2rem;
+}
+.transporte-tecnologia-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+.transporte-tecnologia-list-item {
+  display: flex;
+  align-items: center;
+  color: #cbd5e1;
+  font-size: 1.1rem;
+  transition: color 0.3s;
+}
+.transporte-tecnologia-list-item:hover {
+  color: #22d3ee;
+}
+.transporte-tecnologia-list-icon {
+  color: #22d3ee;
+  margin-right: 1rem;
+  font-size: 1.3rem;
+  display: flex;
+  align-items: center;
+  transition: transform 0.3s;
+}
+.transporte-tecnologia-list-item:hover .transporte-tecnologia-list-icon {
+  transform: scale(1.1);
+}
+.tech-icon {
+  width: 24px;
+  height: 24px;
+}
+.transporte-tecnologia-img-wrap {
+  position: relative;
+  width: 100%;
+  height: 384px;
+  border-radius: 1.2rem;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.transporte-tecnologia-img-blur {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, #22d3ee44, #60a5fa33 80%);
+  filter: blur(16px);
+  z-index: 0;
+  pointer-events: none;
+  border-radius: 1.2rem;
+}
+.transporte-tecnologia-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 1.2rem;
+  box-shadow: 0 0 32px 0 #22d3ee33;
+  position: relative;
+  z-index: 1;
+}
+
+/* CTA */
+.transporte-cta {
+  padding: 5rem 0;
+  background: white;
+}
+.transporte-cta-content {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto;
+}
+.transporte-cta-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #223056;
+  margin-bottom: 1.5rem;
+}
+.transporte-cta-desc {
+  font-size: 1.2rem;
+  color: #64748b;
+  margin-bottom: 2.5rem;
+}
+.transporte-cta-btns {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  align-items: center;
+}
+@media (min-width: 600px) {
+  .transporte-cta-btns {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+.transporte-cta-btn-primary {
+  background: linear-gradient(90deg, #06b6d4, #2563eb);
+  color: #fff;
+  border: none;
+  border-radius: 0.7rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  padding: 0.9rem 2.5rem;
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+}
+.transporte-cta-btn-primary:hover {
+  background: linear-gradient(90deg, #22d3ee, #2563eb);
+  box-shadow: 0 0 16px 0 #22d3ee99;
+}
+.transporte-cta-btn-outline {
+  background: transparent;
+  color: #223056;
+  border: 2px solid #223056;
+  border-radius: 0.7rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  padding: 0.9rem 2.5rem;
+  transition: background 0.2s, color 0.2s, border 0.2s;
+}
+.transporte-cta-btn-outline:hover {
+  background: #e0e7ef;
+  color: #2563eb;
+  border-color: #2563eb;
+}

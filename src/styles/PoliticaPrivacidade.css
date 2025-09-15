@@ -1,0 +1,181 @@
+.privacy-root {
+min-height: 100vh;
+background: #f8fafc;
+}
+
+/* HERO */
+.privacy-hero {
+position: relative;
+padding: 6rem 0 3rem 0;
+background: linear-gradient(135deg, #1e3a8a 80%, #2563eb 100%);
+color: #fff;
+text-align: center;
+}
+.privacy-hero-bg {
+position: absolute;
+inset: 0;
+background: rgba(0,0,0,0.15);
+z-index: 1;
+}
+.privacy-hero-content {
+position: relative;
+z-index: 2;
+max-width: 900px;
+margin: 0 auto;
+padding: 0 1.5rem;
+padding-top: 5rem;
+padding-bottom: 5rem;
+}
+.privacy-hero-title {
+font-size: 2.7rem;
+font-weight: 900;
+margin-bottom: 1.5rem;
+line-height: 1.1;
+}
+@media (min-width: 768px) {
+.privacy-hero-title {
+font-size: 4.5rem;
+}
+}
+.privacy-hero-subtitle {
+font-size: 1.3rem;
+color: #f1f5f9;
+font-weight: 500;
+margin-bottom: 0;
+max-width: 700px;
+margin-left: auto;
+margin-right: auto;
+}
+
+/* INTRODUÇÃO */
+.privacy-intro-section {
+padding: 4rem 0 2rem 0;
+background: #f8fafc;
+}
+.privacy-container {
+max-width: 1100px;
+margin: 0 auto;
+padding: 0 1.5rem;
+}
+.privacy-intro-box {
+text-align: center;
+max-width: 700px;
+margin: 0 auto;
+}
+.privacy-intro-title {
+font-size: 2rem;
+font-weight: 700;
+color: #1e3a8a;
+margin-bottom: 1.5rem;
+}
+.privacy-intro-text {
+color: #334155;
+font-size: 1.15rem;
+margin-bottom: 2rem;
+}
+.privacy-update-box {
+background: #e0e7ff;
+border-radius: 1rem;
+padding: 1.5rem;
+text-align: left;
+margin-top: 1.5rem;
+}
+.privacy-update-title {
+font-weight: 600;
+color: #1e3a8a;
+margin-bottom: 0.5rem;
+}
+.privacy-update-text {
+color: #2563eb;
+}
+
+/* SEÇÕES DA POLÍTICA */
+.privacy-sections-section {
+padding: 4rem 0;
+background: #f1f5f9;
+}
+.privacy-sections-grid {
+display: grid;
+grid-template-columns: 1fr;
+gap: 2rem;
+}
+@media (min-width: 1024px) {
+.privacy-sections-grid {
+grid-template-columns: 1fr 1fr;
+}
+}
+.privacy-section-card {
+background: #fff;
+border-radius: 1.2rem;
+box-shadow: 0 2px 24px 0 rgba(34,211,238,0.08);
+border: none;
+padding: 1.5rem 1.2rem;
+display: flex;
+flex-direction: column;
+min-height: 180px;
+transition: box-shadow 0.2s, transform 0.2s, border-color 0.2s;
+}
+.privacy-section-card:hover {
+box-shadow: 0 4px 32px 0 #1e3a8a33, 0 2px 32px 0 #2563eb22;
+border: 1.5px solid #1e3a8a;
+transform: translateY(-2px) scale(1.01);
+}
+.privacy-section-title {
+display: flex;
+align-items: center;
+gap: 1rem;
+font-size: 1.2rem;
+font-weight: 700;
+color: #1e3a8a;
+}
+.privacy-section-icon {
+display: flex;
+align-items: center;
+justify-content: center;
+background: #f1f5f9;
+border-radius: 0.7rem;
+padding: 0.7rem;
+}
+.privacy-section-icon svg {
+color: #1e3a8a !important;
+}
+.privacy-section-content {
+color: #334155;
+font-size: 1.08rem;
+margin-top: 0.7rem;
+}
+
+/* COOKIES */
+.privacy-cookies-section {
+padding: 4rem 0 6rem 0;
+background: #fff;
+}
+.privacy-cookies-card {
+background: #f8fafc;
+border-radius: 1.2rem;
+box-shadow: 0 2px 24px 0 rgba(34,211,238,0.08);
+border: none;
+padding: 2rem 1.5rem;
+max-width: 700px;
+margin: 0 auto;
+}
+.privacy-cookies-title {
+font-size: 2rem;
+font-weight: 700;
+color: #1e3a8a;
+text-align: center;
+margin-bottom: 1.5rem;
+}
+.privacy-cookies-block {
+margin-bottom: 2rem;
+}
+.privacy-cookies-subtitle {
+font-size: 1.15rem;
+font-weight: 600;
+color: #2563eb;
+margin-bottom: 0.5rem;
+}
+.privacy-cookies-text {
+color: #334155;
+font-size: 1.05rem;
+}

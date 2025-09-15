@@ -1,0 +1,227 @@
+.colab-root {
+  min-height: 100vh;
+  background: #0f172a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 0;
+}
+.colab-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem; /* Adiciona padding lateral para mobile */
+}
+.colab-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  align-items: center;
+}
+@media (min-width: 1024px) {
+  .colab-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+  }
+}
+.colab-info {
+  color: #fff;
+  margin-bottom: 2rem;
+}
+@media (max-width: 1023px) {
+  .colab-info {
+    text-align: center;
+  }
+  .colab-benefits {
+    align-items: center;
+  }
+  .colab-benefit {
+    justify-content: center;
+  }
+}
+.colab-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+@media (min-width: 480px) {
+  .colab-title {
+    font-size: 2.5rem;
+  }
+}
+.colab-desc {
+  color: #cbd5e1;
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  line-height: 1.5;
+}
+@media (max-width: 480px) {
+  .colab-title {
+    font-size: 1.5rem;
+  }
+  .colab-desc {
+    font-size: 1rem;
+  }
+}
+.colab-benefits {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+.colab-benefit {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.colab-benefit-icon {
+  width: 44px;
+  height: 44px;
+  background: #1e293b;
+  border-radius: 0.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.colab-benefit-title {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #fff;
+}
+.colab-benefit-desc {
+  color: #94a3b8;
+  font-size: 0.95rem;
+}
+
+/* Card de login */
+.colab-card {
+  background: rgba(30,41,59,0.85);
+  backdrop-filter: blur(4px);
+  border: 1.5px solid #334155;
+  box-shadow: 0 8px 32px 0 #0ea5e933;
+  border-radius: 1.2rem;
+  padding: 2rem 1.2rem;
+  min-width: 0;
+  max-width: 400px;
+  margin: 0 auto;
+  width: 100%;
+}
+@media (max-width: 480px) {
+  .colab-card {
+    padding: 1.2rem 0.5rem;
+    max-width: 100%;
+  }
+}
+.colab-card-title {
+  color: #fff !important;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.colab-card-title,
+.colab-card-title * {
+  color: #fff !important;
+}
+.colab-card-sub {
+  color: #94a3b8;
+  font-size: 1rem;
+  margin-top: 0.5rem;
+}
+.colab-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  margin-top: 1rem;
+}
+.colab-label {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  color: #cbd5e1;
+  font-size: 1rem;
+}
+.colab-label-icon {
+  width: 22px;
+  height: 22px;
+  color: #38bdf8;
+}
+.colab-input {
+  flex: 1;
+  background: #1e293b;
+  border: 1.5px solid #334155;
+  color: #fff;
+  border-radius: 0.7rem;
+  padding: 0.8rem 1rem;
+  font-size: 1.1rem;
+}
+.colab-input:focus {
+  border-color: #0ea5e9;
+  outline: none;
+}
+.colab-form-row {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+}
+
+/* Checkbox manual */
+.colab-checkbox-label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+  user-select: none;
+  gap: 0.5rem;
+}
+.colab-checkbox {
+  opacity: 0;
+  width: 0;
+  height: 0;
+  position: absolute;
+}
+.colab-custom-checkbox {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #38bdf8;
+  border-radius: 0.4rem;
+  background: #1e293b;
+  display: inline-block;
+  position: relative;
+  transition: border-color 0.2s, background 0.2s;
+}
+.colab-checkbox:checked + .colab-custom-checkbox {
+  background: #38bdf8;
+  border-color: #0ea5e9;
+}
+.colab-checkbox:checked + .colab-custom-checkbox:after {
+  content: "";
+  position: absolute;
+  left: 5px;
+  top: 1px;
+  width: 6px;
+  height: 12px;
+  border: solid #fff;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+}
+.colab-remember-label {
+  color: #cbd5e1;
+  font-size: 0.98rem;
+  margin-left: 0.3rem;
+}
+.colab-btn {
+  width: 100%;
+  background: linear-gradient(90deg, #0ea5e9, #3b82f6);
+  color: #fff;
+  font-weight: 600;
+  border-radius: 0.7rem;
+  font-size: 1.1rem;
+  padding: 0.9rem 0;
+  border: none;
+  transition: background 0.2s, color 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.colab-btn:hover {
+  background: linear-gradient(90deg, #3b82f6, #0ea5e9);
+  color: #fff;
+}
