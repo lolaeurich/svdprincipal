@@ -1,5 +1,5 @@
-import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import React, { useEffect } from "react";
+import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
 
 import Home from "./pages/Home";
 import PoliticaPrivacidade from "./pages/PoliticaPrivacidade";
@@ -23,9 +23,20 @@ import AreaMEI from "./pages/AreaMEI";
 import AreaPrestadorServicos from "./pages/AreaPrestadorServicos";
 import CadastroFornecedores from "./pages/CadastroFornecedores";
 
+function ScrollToTop() {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  return null;
+}
+
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/politica-privacidade" element={<PoliticaPrivacidade />} />
