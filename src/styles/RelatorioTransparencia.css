@@ -460,7 +460,7 @@
 }
 
 @media (max-width: 600px) {
-  .btn-cta {
+  .btn-lg {
     width: 80%;
     min-width: 200px;
     max-width: 100%;
