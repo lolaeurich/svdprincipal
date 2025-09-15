@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom"; // Adicione esta linha
 import logoBranca from "../../assets/logo-branca.png";
 import transportesLogo from "../../assets/logos/transportes-logo.png";
 import acessoriosLogo from "../../assets/logos/acessorios-logo.png";
@@ -49,22 +50,22 @@ export default function HomeFooter() {
             <h3 className="custom-footer-heading">Navegação</h3>
             <ul className="custom-footer-list">
               <li>
-                <a href="/home" className="custom-footer-link">Home</a>
+                <Link to="/home" className="custom-footer-link">Home</Link>
               </li>
               <li>
-                <a href="/sobre" className="custom-footer-link">Sobre Nós</a>
+                <Link to="/sobre" className="custom-footer-link">Sobre Nós</Link>
               </li>
               <li>
-                <a href="/servicos" className="custom-footer-link">Serviços</a>
+                <Link to="/servicos" className="custom-footer-link">Serviços</Link>
               </li>
               <li>
-                <a href="/sustentabilidade" className="custom-footer-link">Sustentabilidade</a>
+                <Link to="/sustentabilidade" className="custom-footer-link">Sustentabilidade</Link>
               </li>
               <li>
-                <a href="/blog" className="custom-footer-link">Blog</a>
+                <Link to="/blog" className="custom-footer-link">Blog</Link>
               </li>
               <li>
-                <a href="/contato" className="custom-footer-link">Contato</a>
+                <Link to="/contato" className="custom-footer-link">Contato</Link>
               </li>
             </ul>
           </div>
@@ -74,19 +75,19 @@ export default function HomeFooter() {
             <h3 className="custom-footer-heading">Nossos Produtos</h3>
             <ul className="custom-footer-list">
               <li>
-                <a href="/transporte" className="custom-footer-link">Transporte e Armazenagem</a>
+                <Link to="/transporte" className="custom-footer-link">Transporte e Armazenagem</Link>
               </li>
               <li>
-                <a href="/logistica" className="custom-footer-link">Logística</a>
+                <Link to="/logistica" className="custom-footer-link">Logística</Link>
               </li>
               <li>
-                <a href="/implementos" className="custom-footer-link">Implementos</a>
+                <Link to="/implementos" className="custom-footer-link">Implementos</Link>
               </li>
               <li>
-                <a href="/funilaria" className="custom-footer-link">Funilaria e Pintura</a>
+                <Link to="/funilaria" className="custom-footer-link">Funilaria e Pintura</Link>
               </li>
               <li>
-                <a href="/catalogo" className="custom-footer-link">Catálogo Online</a>
+                <Link to="/catalogo" className="custom-footer-link">Catálogo Online</Link>
               </li>
             </ul>
           </div>
@@ -96,25 +97,25 @@ export default function HomeFooter() {
             <h3 className="custom-footer-heading">Portais & Políticas</h3>
             <ul className="custom-footer-list custom-footer-list-mb">
               <li>
-                <a href="/areacolaborador" className="custom-footer-link">Área do Colaborador</a>
+                <Link to="/areacolaborador" className="custom-footer-link">Área do Colaborador</Link>
               </li>
               <li>
-                <a href="/areamei" className="custom-footer-link">Área do MEI</a>
+                <Link to="/areamei" className="custom-footer-link">Área do MEI</Link>
               </li>
               <li>
-                <a href="/areaprestador" className="custom-footer-link">Área do Prestador</a>
+                <Link to="/areaprestador" className="custom-footer-link">Área do Prestador</Link>
               </li>
               <li>
-                <a href="/trabalhe-conosco" className="custom-footer-link">Trabalhe Conosco</a>
+                <Link to="/trabalhe-conosco" className="custom-footer-link">Trabalhe Conosco</Link>
               </li>
               <li>
-                <a href="/cadastrofornecedores" className="custom-footer-link">Cadastro de Fornecedores</a>
+                <Link to="/cadastrofornecedores" className="custom-footer-link">Cadastro de Fornecedores</Link>
               </li>
               <li>
-                <a href="/politica-privacidade" className="custom-footer-link">Política de Privacidade</a>
+                <Link to="/politica-privacidade" className="custom-footer-link">Política de Privacidade</Link>
               </li>
               <li>
-                <a href="/relatorio-transparencia" className="custom-footer-link">Relatório de Transparência</a>
+                <Link to="/relatorio-transparencia" className="custom-footer-link">Relatório de Transparência</Link>
               </li>
             </ul>
 
