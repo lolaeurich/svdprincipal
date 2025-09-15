@@ -57,6 +57,16 @@
     font-size: 4.5rem; /* md:text-7xl */
   }
 }
+@media (max-width: 600px) {
+  .hero-title {
+    font-size: 2rem !important;
+    line-height: 2.4rem !important;
+    word-break: break-word;
+  }
+  .hero-subtitle {
+    font-size: 1rem !important;
+  }
+}
 
 .hero-subtitle {
   font-size: 1.25rem; /* text-xl */
