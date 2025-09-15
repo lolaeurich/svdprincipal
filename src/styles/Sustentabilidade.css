@@ -62,9 +62,11 @@
     font-size: 2rem !important;
     line-height: 2.4rem !important;
     word-break: break-word;
+    text-align: center; /* Adicione esta linha */
   }
   .hero-subtitle {
     font-size: 1rem !important;
+    text-align: center; /* Opcional, se quiser centralizar o subtítulo também */
   }
 }
 
