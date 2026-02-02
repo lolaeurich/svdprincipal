@@ -1,32 +1,22 @@
-import { useEffect, useState, useRef } from 'react';
+import { useRef } from 'react';
+import { Link } from 'react-router-dom';
 import logoAzul from "../../assets/logo-branca.png";
 import faleconosco from "../../assets/service-item/faleconosco.png";
 import ouvidoria from "../../assets/service-item/helpdesk.png";
 import trabalheconosco from "../../assets/service-item/trabalhe.png";
 import motoristamei from "../../assets/service-item/mei.png";
-import cadastroprestadores from "../../assets/service-item/prestadores.png";
 import areadocolaborador from "../../assets/service-item/team.png";
 import transportes from "../../assets/logos/transportes-logo.png"
 import acessorios from "../../assets/logos/acessorios-logo.png"
 import seminovos from "../../assets/logos/seminovos-logo.png"
-import implementos from "../../assets/logos/implementos-logo.png"
+import implementos from "../../assets/logos/logistica.png"
+import blogImg2 from "../../assets/blog/blog1.jpg";
 
 export default function HomeHero() {
-  const [isPlaying, setIsPlaying] = useState(false);
-  const videoRef = useRef(null);
-
   return (
     <>
       <section className="home-hero">
-        <video
-          ref={videoRef}
-          className="home-hero__video-bg"
-          loop
-          muted
-          poster="/videos/frame-hero.png"
-        >
-          <source src="/videos/hero-video.mp4" type="video/mp4" />
-        </video>
+        <img src={blogImg2} alt="SVD Transportes" className="home-hero__video-bg" />
 
         <div className="home-hero__wrap">
           <div className="home-hero__content-box">
@@ -37,36 +27,9 @@ export default function HomeHero() {
               </div>
               
               <p className="home-hero__content-subtitle">
-                Excelência em Logística, Seminivos e Acessórios
+                Excelência em Logística, Seminovos e Acessórios
               </p>
             </div>
-
-            <button
-              className="home-hero__play-button"
-              onClick={() => {
-                if (isPlaying) {
-                  setIsPlaying(false);
-                  videoRef.current && videoRef.current.pause();
-                } else {
-                  setIsPlaying(true);
-                  videoRef.current && videoRef.current.play();
-                }
-              }}
-              aria-label={isPlaying ? "Pausar vídeo" : "Assistir vídeo"}
-            >
-              {isPlaying ? (
-                // Ícone de pausa grosso
-                <svg width="48" height="48" viewBox="0 0 48 48" fill="currentColor">
-                  <rect x="12" y="10" width="8" height="28" rx="3" />
-                  <rect x="28" y="10" width="8" height="28" rx="3" />
-                </svg>
-              ) : (
-                // Ícone de play grosso
-                <svg width="48" height="48" viewBox="0 0 48 48" fill="currentColor">
-                  <polygon points="14,10 40,24 14,38" stroke="currentColor" strokeWidth="4" fill="currentColor" />
-                </svg>
-              )}
-            </button>
           </div>
         </div>
       </section>
@@ -78,30 +41,26 @@ export default function HomeHero() {
         
         <div className="info-section__content container">
             <div className="info-section__services">
-              <div className="service-item">
-                <img src={areadocolaborador} alt="Logística" className="service-item__icon" />
+              <Link to="/areacolaborador" className="service-item" style={{ textDecoration: 'none' }}>
+                <img src={areadocolaborador} alt="Área do Colaborador" className="service-item__icon" />
                 <p className="service-item__text">ÁREA DO COLABORADOR</p>
-              </div>
-              <div className="service-item">
-                <img src={motoristamei} alt="Acessórios" className="service-item__icon" />
+              </Link>
+              <Link to="/areamei" className="service-item" style={{ textDecoration: 'none' }}>
+                <img src={motoristamei} alt="Motorista MEI" className="service-item__icon" />
                 <p className="service-item__text">MOTORISTA MEI</p>
-              </div>
-              <div className="service-item">
-                <img src={faleconosco} alt="Seminovos" className="service-item__icon" />
+              </Link>
+              <Link to="/contato" className="service-item" style={{ textDecoration: 'none' }}>
+                <img src={faleconosco} alt="Fale Conosco" className="service-item__icon" />
                 <p className="service-item__text">FALE CONOSCO</p>
-              </div>
-              <div className="service-item">
-                <img src={ouvidoria} alt="Implementos" className="service-item__icon" />
+              </Link>
+              <Link to="/contato" className="service-item" style={{ textDecoration: 'none' }}>
+                <img src={ouvidoria} alt="Ouvidoria" className="service-item__icon" />
                 <p className="service-item__text">OUVIDORIA</p>
-              </div>
-              <div className="service-item">
-                <img src={cadastroprestadores} alt="Implementos" className="service-item__icon" />
-                <p className="service-item__text">CADASTRO DE PRESTADORES</p>
-              </div>
-              <div className="service-item">
-                <img src={trabalheconosco} alt="Implementos" className="service-item__icon" />
+              </Link>
+              <Link to="/trabalhe-conosco" className="service-item" style={{ textDecoration: 'none' }}>
+                <img src={trabalheconosco} alt="Trabalhe Conosco" className="service-item__icon" />
                 <p className="service-item__text">TRABALHE CONOSCO</p>
-              </div>
+              </Link>
             </div>
         </div>
       </section>
@@ -151,7 +110,7 @@ function ServicesBar({ logoAzul }) {
     </div>,
     <div key="red" className="services-bar__circle services-bar__circle--red">
       <div className='services-bar__circle-inner-secondary'>
-        <img src={implementos} alt="SVD Implementos Rodoviários" />
+        <img src={implementos} alt="SVD Implementos Rodoviários" style={{ width: "85%", height: "90px" }} />
       </div>
     </div>,
   ];

@@ -6,7 +6,13 @@ import Topbar from "../components/home/TopBar";
 import HomeHeader from "../components/home/HomeHeader";
 import HomeFooter from "../components/home/HomeFooter";
 import homeSecond from "../assets/home-second.jpeg";
-import "../styles/Transporte.css";
+import ctba from "../assets/service-item/ctba.png";
+import ctba2 from "../assets/service-item/ctba2.png";
+import sbc from "../assets/service-item/sbc.jpg";
+import borja from "../assets/service-item/borja.png";
+import pg from "../assets/service-item/pg.png";
+import "../styles/Transporte.css";  
+
 
 export default function TransportesArmazenagem() {
   const services = [
@@ -21,7 +27,7 @@ export default function TransportesArmazenagem() {
       icon: <Package className="service-icon" />,
       title: "Armazenagem Inteligente",
       description: "Centros de distribuição estrategicamente localizados",
-      features: ["15.000m² de área coberta", "Sistema WMS integrado", "Controle de temperatura", "Gestão de estoque"],
+      features: ["15.000m² de área coberta", "Sistema WMS integrado", "Gestão de frota por meio de aplicativo em tempo real", "Gestão de estoque"],
       gradientClass: "gradient-green"
     },
     {
@@ -42,25 +48,29 @@ export default function TransportesArmazenagem() {
 
   const warehouses = [
     {
-      location: "São Paulo - SP",
-      area: "8.000m²",
-      capacity: "15.000 pallets",
-      temperature: "Controlada",
-      image: "https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=600"
+      location: "Matriz - Curitiba, PR",
+      area: "150.000m²",
+      image: ctba
     },
     {
-      location: "Rio de Janeiro - RJ",
-      area: "5.000m²",
-      capacity: "10.000 pallets",
-      temperature: "Ambiente",
-      image: "https://images.unsplash.com/photo-1493946740644-2d8a1f1a6aff?w=600"
+      location: "Curitiba, PR (Pátio 2)",
+      area: "90.000m²",
+      image: ctba2
     },
     {
-      location: "Belo Horizonte - MG",
-      area: "2.000m²",
-      capacity: "4.000 pallets",
-      temperature: "Controlada",
-      image: "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=600"
+      location: "São Bernardo do Campo, SP",
+      area: "45.000m²",
+      image: sbc
+    },
+     {
+      location: "São Borja, RS (Mercovia)",
+      area: "-",
+      image: borja
+    },
+    {
+      location: "Ponta Grossa, PR",
+      area: "40.000m²",
+      image: pg
     }
   ];
 
@@ -123,14 +133,11 @@ export default function TransportesArmazenagem() {
                     <ul className="transporte-servico-list">
                       {service.features.map((feature, idx) => (
                         <li key={idx} className="transporte-servico-list-item">
-                          <div className={`transporte-servico-dot ${service.gradientClass}`}></div>
+                          <div className={`transporte-servico-dot ${service.gradientClass}`} style={{ flexShrink: 0 }}></div>
                           <span>{feature}</span>
                         </li>
                       ))}
                     </ul>
-                    <Button className={`transporte-servico-btn ${service.gradientClass}`}>
-                      Saiba Mais
-                    </Button>
                   </CardContent>
                 </Card>
               ))}
@@ -144,7 +151,7 @@ export default function TransportesArmazenagem() {
             <div className="transporte-frota-header">
               <h2 className="transporte-frota-title">Nossa Frota</h2>
               <p className="transporte-frota-desc">
-                Veículos modernos e bem equipados para atender todas as suas necessidades logísticas
+                Nossa frota é 100% Euro 6, moderna e bem equipada para atender todas as suas necessidades logísticas.
               </p>
             </div>
             <div className="transporte-frota-grid">
@@ -249,10 +256,17 @@ export default function TransportesArmazenagem() {
                 Entre em contato conosco e descubra como podemos melhorar sua operação de transporte e armazenagem.
               </p>
               <div className="transporte-cta-btns">
-                <Button className="transporte-cta-btn-primary">
+                <Button 
+                  className="transporte-cta-btn-primary"
+                  onClick={() => window.location.href = 'mailto:comercial2@gruposvd.com.br'}
+                >
                   Solicitar Orçamento
                 </Button>
-                <Button variant="outline" className="transporte-cta-btn-outline">
+                <Button 
+                  variant="outline" 
+                  className="transporte-cta-btn-outline"
+                  onClick={() => window.location.href = 'mailto:comercial2@gruposvd.com.br'}
+                >
                   Falar com Especialista
                 </Button>
               </div>

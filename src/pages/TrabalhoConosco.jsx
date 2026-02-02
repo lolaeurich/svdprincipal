@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Users, Award, TrendingUp, Heart, Upload, Send } from "lucide-react";
+import { Users, Award, TrendingUp, Heart, Upload, Send, Truck } from "lucide-react";
 import Topbar from "../components/home/TopBar";
 import HomeHeader from "../components/home/HomeHeader";
 import HomeFooter from "../components/home/HomeFooter";
@@ -57,18 +57,24 @@ export default function TrabalhoConosco() {
   ];
 
   const areas = [
-    "Operacional",
-    "Administrativa",
-    "Comercial",
-    "Financeira",
-    "Recursos Humanos",
-    "Tecnologia da Informação",
-    "Segurança",
-    "Manutenção"
+    "Motorista Carreteiro",
+    "Motorista Truck",
+    "Motorista Toco",
+    "Motorista VUC",
+    "Agregado",
+    "Outros"
   ];
 
   return (
     <>
+      <style>{`
+        .hero-vagas-btn {
+          width: auto !important;
+          flex-grow: 0 !important;
+          display: inline-flex !important;
+          min-width: 200px;
+        }
+      `}</style>
       <Topbar />
       <HomeHeader />
       <div className="min-h-screen">
@@ -85,6 +91,15 @@ export default function TrabalhoConosco() {
               <p className="hero-subtitle">
                 Faça parte de uma equipe que move o Brasil. Juntos construímos o futuro do transporte e logística.
               </p>
+              <div style={{ marginTop: '2rem', display: 'flex', justifyContent: 'center'}}>
+                <Button 
+                  onClick={() => window.open('https://ats.abler.com.br/jobs/5375', '_blank')}
+                  className="hero-vagas-btn"
+                  style={{ backgroundColor: '#fff', color: '#002d72', fontWeight: 'bold', padding: '0.75rem 2rem' }}
+                >
+                  Ver Vagas Disponíveis
+                </Button>
+              </div>
             </div>
           </div>
         </section>
@@ -97,7 +112,7 @@ export default function TrabalhoConosco() {
               {benefits.map((benefit, index) => (
                 <Card key={index} className="benefit-card benefit-card-wide">
                   <CardContent className="benefit-card-content">
-                    <div className="benefit-icon-wrapper">
+                    <div className="benefit-icon-wrapper" style={{ marginTop: '2rem' }}>
                       {benefit.icon}
                     </div>
                     <h3 className="benefit-item-title">{benefit.title}</h3>
@@ -153,15 +168,15 @@ export default function TrabalhoConosco() {
         <section className="application-form-section">
           <div className="container">
             <div className="application-form-wrapper">
-              <h2 className="form-title-main">Candidate-se</h2>
+              <h2 className="form-title-main">Seja um Motorista Agregado (MEI)</h2>
               <p className="form-subtitle-main">
-                Envie seus dados e faça parte do nosso time de profissionais dedicados.
+                Envie seus dados e currículo para fazer parte da nossa rede de parceiros logísticos.
               </p>
               
               <Card className="form-card">
                 <CardHeader>
-                  <CardTitle className="form-card-title">Formulário de Candidatura</CardTitle>
-                  <p className="form-card-subtitle">Preencha todas as informações abaixo</p>
+                  <CardTitle className="form-card-title">Cadastro de Motorista MEI</CardTitle>
+                  <p className="form-card-subtitle">Preencha as informações abaixo para análise</p>
                 </CardHeader>
                 <CardContent>
                   <form onSubmit={handleSubmit} className="form-space">
@@ -201,10 +216,10 @@ export default function TrabalhoConosco() {
                         />
                       </div>
                       <div>
-                        <label className="form-label">Área de Interesse *</label>
+                        <label className="form-label">Categoria do Veículo *</label>
                         <Select onValueChange={(value) => setFormData({...formData, area: value})}>
                           <SelectTrigger>
-                            <SelectValue placeholder="Selecione uma área" />
+                            <SelectValue placeholder="Selecione a categoria" />
                           </SelectTrigger>
                           <SelectContent>
                             {areas.map((area) => (
@@ -250,7 +265,7 @@ export default function TrabalhoConosco() {
 
                     <Button type="submit" className="submit-button">
                       <Send className="send-icon" />
-                      Enviar Candidatura
+                      Enviar Cadastro
                     </Button>
                   </form>
                 </CardContent>

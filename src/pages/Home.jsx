@@ -26,6 +26,7 @@ export default function Home() {
         <HomeCertifications />
         <HomeClients />
         <HomeSocialResponsibility />
+
         <HomeBlog />
         <HomeLocation />
         <HomeFooter />

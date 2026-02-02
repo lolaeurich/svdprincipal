@@ -1,5 +1,5 @@
 import React from "react";
-import { Truck, Package, Shield, Clock, Globe, Settings } from "lucide-react";
+import { Truck, Package, Shield, Clock, Globe, Settings, ClipboardCheck } from "lucide-react";
 import Topbar from "../components/home/TopBar";
 import HomeHeader from "../components/home/HomeHeader";
 import HomeFooter from "../components/home/HomeFooter";
@@ -33,38 +33,32 @@ export default function Servicos() {
     {
       icon: <Truck className="w-12 h-12 text-blue-600" />,
       title: "Transporte Rodoviário",
-      description: "Soluções completas em transporte rodoviário de cargas com frota própria moderna e rastreamento em tempo real.",
-      features: ["Frota própria", "Rastreamento GPS", "Seguro total", "Entrega programada"]
+      description: "Soluções completas em transporte rodoviário de cargas com frota própria 100% Euro 6.",
+      features: ["Frota própria", "Rastreamento em tempo real", "Seguro total", "Cobertura nacional"]
     },
     {
       icon: <Package className="w-12 h-12 text-red-600" />,
       title: "Logística Integrada",
-      description: "Gestão completa da cadeia logística com armazenagem, distribuição e controle de estoque.",
-      features: ["Armazenagem", "Distribuição", "Controle de estoque", "Gestão de pedidos"]
-    },
-    {
-      icon: <Shield className="w-12 h-12 text-green-600" />,
-      title: "Cargas Especiais",
-      description: "Transporte especializado para cargas sensíveis, perigosas e de alto valor agregado.",
-      features: ["Cargas perigosas", "Produtos químicos", "Equipamentos especiais", "Escolta armada"]
-    },
-    {
-      icon: <Clock className="w-12 h-12 text-orange-600" />,
-      title: "Entregas Expressas",
-      description: "Serviço de entrega rápida para cargas urgentes com prazos garantidos.",
-      features: ["24/7 disponível", "Prazo garantido", "Tracking online", "Suporte dedicado"]
-    },
-    {
-      icon: <Globe className="w-12 h-12 text-purple-600" />,
-      title: "Comércio Exterior",
-      description: "Soluções para importação e exportação com tratamento aduaneiro completo.",
-      features: ["Importação", "Exportação", "Despacho aduaneiro", "Documentação"]
+      description: "Gestão completa da cadeia logística com armazenagem, distribuição, entrega técnica e controle de estoque.",
+      features: ["Armazenagem", "Distribuição", "Controle de estoque", "Entrega Técnica de veículos"]
     },
     {
       icon: <Settings className="w-12 h-12 text-blue-500" />,
       title: "Consultoria Logística",
       description: "Análise e otimização de processos logísticos para redução de custos e aumento de eficiência.",
       features: ["Análise de processos", "Redução de custos", "Otimização de rotas", "Relatórios detalhados"]
+    },
+    {
+      icon: <ClipboardCheck className="w-12 h-12 text-green-600" />,
+      title: "Entrega Técnica",
+      description: "O momento em que o cliente recebe o veículo totalmente preparado, personalizado e revisado, acompanhado de uma explicação técnica detalhada.",
+      features: [
+        "Funcionamento de sistemas e tecnologias embarcadas",
+        "Itens personalizados e acessórios instalados",
+        "Cuidados operacionais e de manutenção preventiva",
+        "Checklist final de qualidade",
+        "Dúvidas técnicas do cliente"
+      ]
     }
   ];
 
@@ -118,19 +112,24 @@ export default function Servicos() {
                     </div>
                   </CardHeader>
                   <CardContent>
-                    <div className="features-container">
-                      <h4 className="features-title">Características do serviço:</h4>
-                      <ul className="features-list">
-                        {service.features.map((feature, idx) => (
-                          <li key={idx} className="feature-item">
-                            <div className="feature-bullet"></div>
-                            {feature}
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
+                    {service.features && (
+                      <div className="features-container">
+                        <h4 className="features-title">Características do serviço:</h4>
+                        <ul className="features-list">
+                          {service.features.map((feature, idx) => (
+                            <li key={idx} className="feature-item">
+                              <div className="feature-bullet"></div>
+                              {feature}
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    )}
                     <div className="service-card-btn-wrapper">
-                      <Button className="w-full service-card-btn">
+                      <Button 
+                        className="w-full service-card-btn"
+                        onClick={() => window.location.href = 'mailto:comercial2@gruposvd.com.br'}
+                      >
                         Solicitar Orçamento
                       </Button>
                     </div>
@@ -149,7 +148,10 @@ export default function Servicos() {
               <p className="cta-subtitle">
                 Nossa equipe de especialistas está pronta para desenvolver a solução logística ideal para seu negócio.
               </p>
-              <Button className="cta-button-small">
+              <Button 
+                className="cta-button-small"
+                onClick={() => window.location.href = 'mailto:comercial2@gruposvd.com.br'}
+              >
                 Fale com Nossos Especialistas
               </Button>
             </div>

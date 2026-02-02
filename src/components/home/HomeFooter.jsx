@@ -78,16 +78,20 @@ export default function HomeFooter() {
                 <Link to="/transporte" className="custom-footer-link">Transporte e Armazenagem</Link>
               </li>
               <li>
-                <Link to="/logistica" className="custom-footer-link">Logística</Link>
+                <Link to="/transporte" className="custom-footer-link">Seminovos</Link>
               </li>
               <li>
-                <Link to="/implementos" className="custom-footer-link">Implementos</Link>
+                <Link to="/transporte" className="custom-footer-link">Acessórios</Link>
               </li>
               <li>
-                <Link to="/funilaria" className="custom-footer-link">Funilaria e Pintura</Link>
+                {/*<Link to="/logistica" className="custom-footer-link">Logística</Link>*/}
               </li>
               <li>
-                <Link to="/catalogo" className="custom-footer-link">Catálogo Online</Link>
+                {/*<Link to="/implementos" className="custom-footer-link">Implementos</Link>*/}
+                {/*<Link to="/funilaria" className="custom-footer-link">Funilaria e Pintura</Link>*/}
+              </li>
+              <li>
+                {/*<Link to="/catalogo" className="custom-footer-link">Catálogo Online</Link>*/}
               </li>
             </ul>
           </div>
@@ -97,13 +101,13 @@ export default function HomeFooter() {
             <h3 className="custom-footer-heading">Portais & Políticas</h3>
             <ul className="custom-footer-list custom-footer-list-mb">
               <li>
-                <Link to="/areacolaborador" className="custom-footer-link">Área do Colaborador</Link>
+                {/*<Link to="/areacolaborador" className="custom-footer-link">Área do Colaborador</Link>*/}
               </li>
               <li>
-                <Link to="/areamei" className="custom-footer-link">Área do MEI</Link>
+                {/*<Link to="/areamei" className="custom-footer-link">Área do MEI</Link>*/}
               </li>
               <li>
-                <Link to="/areaprestador" className="custom-footer-link">Área do Prestador</Link>
+                {/*<Link to="/areaprestador" className="custom-footer-link">Área do Prestador</Link>*/}
               </li>
               <li>
                 <Link to="/trabalhe-conosco" className="custom-footer-link">Trabalhe Conosco</Link>

@@ -146,7 +146,10 @@ export default function FunilariaEPintura() {
             <p className="funilaria-cta-desc">
               Traga seu veículo para uma avaliação sem compromisso e receba um orçamento detalhado.
             </p>
-            <Button className="funilaria-cta-btn">
+            <Button 
+              className="funilaria-cta-btn"
+              onClick={() => window.location.href = 'mailto:comercial2@gruposvd.com.br'}
+            >
               Solicitar Orçamento Online
             </Button>
           </div>

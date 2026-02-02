@@ -1,10 +1,16 @@
 import React from "react";
-import { Users, Award, Target, History, TrendingUp, Shield } from "lucide-react";
+import { Users, Award, Target, History, TrendingUp, Shield, Heart } from "lucide-react";
 import Topbar from "../components/home/TopBar";
 import HomeHeader from "../components/home/HomeHeader";
 import HomeFooter from "../components/home/HomeFooter";
 import TimelineCarousel from "../components/TimelineCarousel";
 import homeSecond from "../assets/home-second.jpeg";
+import ppImg from "../assets/logos/pp.png";
+import cert9001 from "../assets/certificados/conformidade1.png";
+import cert14001 from "../assets/certificados/conformidade2.png";
+import cert39001 from "../assets/certificados/conformidade3.png";
+import iso from "../assets/certificados/iso.png";
+import ods from "../assets/service-item/ods.png";
 import "../styles/Sobre.css";
 
 export default function QuemSomos() {
@@ -12,20 +18,33 @@ export default function QuemSomos() {
     {
       icon: <Target className="sobre-icon" />,
       title: "Missão",
-      description: "Conectar destinos e entregar soluções logísticas inovadoras que impulsionam o crescimento dos nossos clientes.",
+      description: "No Grupo SVD, transformamos cada rota em uma jornada de sustentabilidade, segurança e excelência, oferecendo soluções logísticas personalizadas que impulsionam o crescimento e inspiram a confiança de nossos clientes e colaboradores.",
       color: "sobre-pilar-bg-blue"
     },
     {
       icon: <Award className="sobre-icon" />,
       title: "Visão",
-      description: "Ser a referência nacional em transporte sustentável e logística inteligente até 2030.",
+      description: "Ser referência em soluções logísticas sustentáveis no Brasil e no Mercosul, promovendo inovação, respeito e valorização do capital humano estrutural.",
       color: "sobre-pilar-bg-green"
     },
     {
       icon: <Shield className="sobre-icon" />,
       title: "Valores",
-      description: "Integridade, excelência, inovação, sustentabilidade e compromisso com nossos stakeholders.",
+      description: (
+        <ul style={{ listStyle: "disc", paddingLeft: "1.5rem", textAlign: "left" }}>
+          <li>Respeito</li>
+          <li>Foco no Cliente</li>
+          <li>Segurança</li>
+          <li>Ética & Responsabilidade Sócio Ambiental</li>
+        </ul>
+      ),
       color: "sobre-pilar-bg-purple"
+    },
+    {
+      icon: <Heart className="sobre-icon" />,
+      title: "Propósito",
+      description: "Entregar soluções sustentáveis com segurança, respeito às pessoas e ao meio ambiente, fazendo a diferença com qualidade, promovendo a inovação e a responsabilidade social.",
+      color: "sobre-pilar-bg-blue"
     }
   ];
 
@@ -101,12 +120,83 @@ export default function QuemSomos() {
                     <h3 className="sobre-pilar-title">{value.title}</h3>
                   </div>
                   <div className="sobre-pilar-content">
-                    <p className="sobre-pilar-desc">
+                    <div className="sobre-pilar-desc">
                       {value.description}
-                    </p>
+                    </div>
                   </div>
                 </div>
               ))}
+            </div>
+          </div>
+        </section>
+
+        {/* ODS Section */}
+        <section className="sobre-ods" style={{ padding: "5rem 0", backgroundColor: "#f8fafc" }}>
+          <div className="container">
+            <div style={{ maxWidth: "900px", margin: "0 auto", textAlign: "center" }}>
+              <h2 className="sobre-historia-title" style={{ marginBottom: "2rem" }}>ODS: Objetivos de Desenvolvimento Sustentável</h2>
+              
+              <p style={{ fontSize: "1.125rem", lineHeight: "1.8", color: "#374151", marginBottom: "1.5rem" }}>
+                Os Objetivos de Desenvolvimento Sustentável são um conjunto de metas globais
+                criadas pela ONU para promover o desenvolvimento econômico, social e ambiental de
+                forma equilibrada, garantindo qualidade de vida para as pessoas hoje sem
+                comprometer as futuras gerações.
+              </p>
+              
+              <p style={{ fontSize: "1.25rem", fontWeight: "bold", color: "#15803d", marginBottom: "3rem" }}>
+                São 17 Objetivos no total e 3 foram escolhidos pela SVD como foco principal.
+              </p>
+
+              <div style={{ 
+                width: "100%", 
+                height: "auto", 
+                minHeight: "300px",
+                borderRadius: "1rem",
+                display: "flex",
+                justifyContent: "center",
+                overflow: "hidden"
+              }}>
+                 <img src={ods} alt="ods" className="ods-image" />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Política Integrada e Certificações */}
+        <section className="sobre-certificacoes">
+          <div className="sobre-historia-container">
+            {/* Política Integrada */}
+            <div className="sobre-cert-bloco">
+              <h2 className="sobre-lideranca-title">Política Integrada (SGI)</h2>
+              <p className="sobre-cert-texto">
+                A SVD presta Serviço Logístico de Transporte e Armazenagem para a indústria automotiva, visando atender as necessidades dos clientes através da melhoria contínua do SGI (Sistema de Gestão Integrada), atendendo os requisitos legais e outros requisitos, comprometendo-se com a segurança viária e a redução da poluição.
+              </p>
+            </div>
+
+            {/* Certificações */}
+            <div className="home-certifications__container">
+              <div className="home-certifications__text-content">
+                <h2 className="home-certifications__title">Certificações ISO e OEA</h2>
+                <p className="home-certifications__description">
+                  A SVD Transportes é sinônimo de qualidade, segurança e sustentabilidade, refletidos nas certificações que orgulhosamente ostentamos:
+                </p>
+                <ul className="home-certifications__list">
+                  <li><p><strong>ISO 9001:</strong> Garante a excelência na gestão da qualidade.</p></li>
+                  <li><p><strong>ISO 14001:</strong> Reafirma nosso compromisso com a gestão ambiental.</p></li>
+                  <li><p><strong>ISO 39001:</strong> Específica para segurança viária e operações logísticas.</p></li>
+                  <li><p><strong>OEA (Operador Econômico Autorizado):</strong> Certifica a SVD como parceiro estratégico e confiável no comércio exterior.</p></li>
+                </ul>
+              </div>
+              <div className="home-certifications__image-content">
+                <div className="certificate-images">
+                  <img src={cert9001} alt="Certificado ISO 9001" className="certificate-image" />
+                  <img src={cert14001} alt="Certificado ISO 14001" className="certificate-image" />
+                  <img src={cert39001} alt="Certificado ISO 39001" className="certificate-image" />
+                </div>
+                <div className="iso-seal">
+                  <img src={iso} alt="Selo ISO" className="iso-seal__image" />
+                </div>
+              </div>
             </div>
           </div>
         </section>
@@ -131,26 +221,45 @@ export default function QuemSomos() {
         </section>
 
         {/* Liderança */}
-        <section className="sobre-lideranca">
-          <div className="sobre-lideranca-container">
-            <h2 className="sobre-lideranca-title">Nossa Liderança</h2>
-            <div className="sobre-lideranca-grid">
-              {leadership.map((leader, index) => (
-                <div key={index} className="sobre-lider-card">
-                  <div className="sobre-lider-img-wrap">
-                    <img
-                      src={leader.image}
-                      alt={leader.name}
-                      className="sobre-lider-img"
-                    />
+        {/*
+          <section className="sobre-lideranca">
+            <div className="sobre-lideranca-container">
+              <h2 className="sobre-lideranca-title">Nossa Liderança</h2>
+              <div className="sobre-lideranca-grid">
+                {leadership.map((leader, index) => (
+                  <div key={index} className="sobre-lider-card">
+                    <div className="sobre-lider-img-wrap">
+                      <img
+                        src={leader.image}
+                        alt={leader.name}
+                        className="sobre-lider-img"
+                      />
+                    </div>
+                    <div className="sobre-lider-content">
+                      <h3 className="sobre-lider-nome">{leader.name}</h3>
+                      <p className="sobre-lider-cargo">{leader.position}</p>
+                      <p className="sobre-lider-exp">{leader.experience}</p>
+                    </div>
                   </div>
-                  <div className="sobre-lider-content">
-                    <h3 className="sobre-lider-nome">{leader.name}</h3>
-                    <p className="sobre-lider-cargo">{leader.position}</p>
-                    <p className="sobre-lider-exp">{leader.experience}</p>
-                  </div>
-                </div>
-              ))}
+                ))}
+              </div>
+            </div>
+          </section>
+        */}
+
+        {/* Apoio Social */}
+        <section className="sobre-social" style={{ padding: '4rem 0', backgroundColor: '#fff', textAlign: 'center' }}>
+          <div className="container">
+            <h2 className="sobre-lideranca-title" style={{ marginBottom: '2rem' }}>Compromisso Social</h2>
+            <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '1.5rem' }}>
+              <p style={{ maxWidth: '700px', margin: '0 auto', fontSize: '1.1rem', color: '#4b5563', lineHeight: '1.6' }}>
+                Além de conectar destinos, conectamos propósitos. A SVD é uma empresa parceira do <strong>Hospital Pequeno Príncipe</strong>, apoiando a causa da saúde infantojuvenil no Brasil.
+              </p>
+              <img 
+                src={ppImg} 
+                alt="Selo Nós Apoiamos - Hospital Pequeno Príncipe" 
+                style={{ maxWidth: '200px', height: 'auto' }} 
+              />
             </div>
           </div>
         </section>
@@ -166,7 +275,10 @@ export default function QuemSomos() {
                 Junte-se a nós nesta jornada de crescimento e inovação no setor de transporte e logística.
               </p>
               <div className="sobre-cta-btns">
-                <button className="sobre-btn sobre-btn-primary">
+                <button 
+                  className="sobre-btn sobre-btn-primary"
+                  onClick={() => window.open('https://ats.abler.com.br/jobs/5375', '_blank')}
+                >
                   Trabalhe Conosco
                 </button>
                 <button className="sobre-btn sobre-btn-outline">

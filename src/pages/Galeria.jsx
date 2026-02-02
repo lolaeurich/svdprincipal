@@ -166,7 +166,10 @@ export default function Galeria() {
             <p className="cta-subtitle">
               Agende uma visita e veja de perto nossa infraestrutura completa e tecnologia de ponta.
             </p>
-            <Button className="cta-button">
+            <Button 
+              className="cta-button"
+              onClick={() => window.location.href = 'mailto:comercial2@gruposvd.com.br'}
+            >
               Agendar Visita
             </Button>
           </div>

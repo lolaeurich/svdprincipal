@@ -1,5 +1,5 @@
 import React from "react";
-import { Route, TrendingUp, Zap, Globe, Package2, Truck } from "lucide-react";
+import { Route, TrendingUp, Zap, Globe, Package2, Truck, ClipboardCheck } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "../components/Card";
 import { Button } from "../components/Button";
 import Topbar from "../components/home/TopBar";
@@ -35,8 +35,15 @@ export default function Logistica() {
       icon: <Globe className="solution-icon" />,
       title: "Distribuição Nacional",
       description: "Cobertura completa em todo território brasileiro",
-      features: ["Rede de 50+ cidades", "Centros de distribuição", "Last mile delivery", "Reverse logistics"],
+      features: ["Rede de 50+ cidades", "Centros de distribuição", "Entrega Técnica de veículos", "Reverse logistics"],
       gradientClass: "gradient-blue"
+    },
+    {
+      icon: <ClipboardCheck className="solution-icon" />,
+      title: "Entrega Técnica",
+      description: "Veículo entregue preparado, personalizado e revisado com explicação técnica detalhada.",
+      features: ["Sistemas e tecnologias embarcadas", "Itens personalizados e acessórios", "Cuidados operacionais e manutenção", "Checklist final de qualidade"],
+      gradientClass: "gradient-green"
     }
   ];
 

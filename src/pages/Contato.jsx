@@ -36,26 +36,25 @@ export default function Contato() {
     {
       icon: <Phone className="contact-icon phone-icon" />,
       title: "Telefone",
-      info: "(11) 99999-9999",
+      info: "(41) 3373-3330",
       subtitle: "Seg a Sex: 8h às 18h"
     },
     {
       icon: <Mail className="contact-icon mail-icon" />,
       title: "Email",
-      info: "contato@svd.com.br",
+      info: "contato@gruposvd.com.br",
       subtitle: "Resposta em até 24h"
     },
     {
       icon: <MapPin className="contact-icon map-icon" />,
       title: "Endereço",
-      info: "Rua das Empresas, 123",
-      subtitle: "São Paulo - SP, 01234-567"
+      info: "Rua Edmundo Eckstein 888",
+      subtitle: "Curitiba, PR, 81290-080"
     },
     {
       icon: <Clock className="contact-icon clock-icon" />,
       title: "Horário de Funcionamento",
       info: "Segunda a Sexta: 8h às 18h",
-      subtitle: "Sábado: 8h às 12h"
     }
   ];
 
@@ -208,15 +207,6 @@ export default function Contato() {
                 </CardContent>
               </Card>
 
-              <Card className="promo-card">
-                <CardContent className="promo-content">
-                  <h3 className="promo-title">Atendimento 24/7</h3>
-                  <p className="promo-text">Para emergências e cargas urgentes</p>
-                  <Button className="promo-button">
-                    (11) 99999-0000
-                  </Button>
-                </CardContent>
-              </Card>
             </div>
           </div>
         </div>

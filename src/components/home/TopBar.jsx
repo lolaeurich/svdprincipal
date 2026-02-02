@@ -23,7 +23,7 @@ export default function TopBar() {
           >
             <BsWhatsapp size={18} className="topbar__icon" />
           </a>ㅤ
-          <span className="topbar__phone">(41) 3373-3330ㅤ |ㅤ </span>
+          <span className="topbar__phone" style={{ fontSize: '1.1rem', fontWeight: 'bold' }}>(41) 3373-3330ㅤ |ㅤ </span>
         </div>
         <div className="topbar__socials">
           <a

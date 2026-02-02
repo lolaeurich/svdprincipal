@@ -4,6 +4,9 @@ import Topbar from "../components/home/TopBar";
 import HomeHeader from "../components/home/HomeHeader";
 import HomeFooter from "../components/home/HomeFooter";
 import "../styles/RelatorioTransparencia.css";
+import des1 from "../assets/blog/igualdade1.png";
+import des2 from "../assets/blog/igualdade2.png";
+import des3 from "../assets/blog/igualdade3.png";
 
 export default function RelatorioTransparencia() {
   const salaryData = [
@@ -90,67 +93,23 @@ export default function RelatorioTransparencia() {
         {/* Tabela de Transparência Salarial */}
         <section className="salary-table-section">
           <div className="container">
-            <h2 className="section-title">Dados Salariais por Cargo</h2>
+            <h2 className="section-title">Relatório de Transparência e Igualdade Salarial de Mulheres e Homens - 1º Semestre 2025</h2>
             <div className="card-table card-hover">
               <div className="card-header">
                 <h2 className="card-title-flex">
                   <BarChart3 className="icon-title" />
-                  Análise Comparativa de Remuneração
+                  Empregador: 04.732.762/0001-33 / Quant. de trabalhadores ativos em 31/12/2024: 175
                 </h2>
                 <p className="card-subtitle-table">
                   Dados referentes ao período de Janeiro a Dezembro de 2024
                 </p>
               </div>
-              <div className="card-content">
-                <div className="table-wrapper">
-                  <table className="table-full-width">
-                    <thead>
-                      <tr className="table-header-row">
-                        <th className="table-header-cell table-header-cell-left">Cargo</th>
-                        <th className="table-header-cell table-header-cell-center">Total</th>
-                        <th className="table-header-cell table-header-cell-center">Homens (Qtd)</th>
-                        <th className="table-header-cell table-header-cell-center">Salário Médio (H)</th>
-                        <th className="table-header-cell table-header-cell-center">Mulheres (Qtd)</th>
-                        <th className="table-header-cell table-header-cell-center">Salário Médio (M)</th>
-                        <th className="table-header-cell table-header-cell-center">Diferença %</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      {salaryData.map((row, index) => {
-                        const maleSalary = parseFloat(row.male.average.replace('R$ ', '').replace('.', '').replace(',', '.'));
-                        const femaleSalary = parseFloat(row.female.average.replace('R$ ', '').replace('.', '').replace(',', '.'));
-                        const diffPercentage = ((femaleSalary - maleSalary) / maleSalary) * 100;
-                        
-                        return (
-                          <tr key={index} className={`table-row ${index % 2 === 0 ? 'table-row-even' : 'table-row-odd'}`}>
-                            <td className="table-cell table-cell-left">{row.position}</td>
-                            <td className="table-cell table-cell-center font-semibold">{row.total}</td>
-                            <td className="table-cell table-cell-center">{row.male.count}</td>
-                            <td className="table-cell table-cell-center font-medium">{row.male.average}</td>
-                            <td className="table-cell table-cell-center">{row.female.count}</td>
-                            <td className="table-cell table-cell-center font-medium">{row.female.average}</td>
-                            <td className="table-cell table-cell-center">
-                              <span className={`diff-percentage ${diffPercentage >= 0 ? 'text-green' : 'text-red'}`}>
-                                {diffPercentage > 0 ? '+' : ''}{diffPercentage.toFixed(1)}%
-                              </span>
-                            </td>
-                          </tr>
-                        );
-                      })}
-                    </tbody>
-                  </table>
-                </div>
-                
-                <div className="notes-box">
-                  <h4 className="notes-title">Observações:</h4>
-                  <ul className="notes-list">
-                    <li> Valores apresentados são médias salariais brutas</li>
-                    <li> Dados incluem salário base + benefícios variáveis</li>
-                    <li> Análise considera mesmo nível hierárquico e experiência</li>
-                    <li> Percentual positivo indica salário médio feminino superior</li>
-                  </ul>
-                </div>
+              <div style={{ display: "flex", flexDirection: "column",justifyContent: "space-around", alignItems: "center" }}>
+              <img src={des1} alt="Certificado ISO 39001"  />
+              <img src={des2} alt="Certificado ISO 39001"  />
+              <img src={des3} alt="Certificado ISO 39001"  />
               </div>
+
             </div>
           </div>
         </section>

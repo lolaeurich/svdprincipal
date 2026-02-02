@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { User, Lock, LogIn, Award, Heart, Briefcase } from "lucide-react";
+import { User, Lock, LogIn, Award, Heart, Briefcase, ShieldAlert } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "../components/Card";
 import { Button } from "../components/Button";
 import { Input } from "../components/Input";
@@ -40,6 +40,17 @@ export default function AreaColaborador() {
                   </div>
                 </div>
               ))}
+            </div>
+            
+            <div style={{ marginTop: '2.5rem' }}>
+              <Button 
+                className="colab-btn" 
+                style={{ backgroundColor: '#dc2626', borderColor: '#dc2626', width: 'auto', paddingInline: '2rem' }}
+                onClick={() => window.open("https://docs.google.com/forms/d/e/1FAIpQLScM1RPbNbhVTrht5XBJWO6fY59U8Z9pWXejW-uB-DZBntIlFQ/viewform?pli=1", "_blank")}
+              >
+                <ShieldAlert className="mr-2 w-5 h-5" />
+                Fazer Reporte de Segurança
+              </Button>
             </div>
           </div>
 

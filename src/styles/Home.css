@@ -6,6 +6,7 @@
   --svd-gray-900: #333;
   --svd-orange: #f48024;
   --svd-green: #79ac22;
+  --svd-purple: #600a92;
   --svd-light-blue: #03a8de;
   --svd-red: #c90226;
   --space-4: 1rem;
@@ -238,6 +239,11 @@ img {
   font-weight: 700;
   text-transform: uppercase;
   margin-bottom: 0;
+  background: linear-gradient(90deg, var(--svd-orange), #facc15);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
 }
 
 .home-hero__content-subtitle {
@@ -495,7 +501,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  border-top-left-radius: 0;
+  border-top-left-radius: 100px;
   border-top-right-radius: 100px;
   border-bottom-right-radius: 100px;
   border-bottom-left-radius: 100px;
@@ -529,7 +535,7 @@ img {
 }
 
 .services-bar__circle--red {
-  background-color: var(--svd-red);
+  background-color: var(--svd-purple);
 }
 
 /* =======================
@@ -545,7 +551,7 @@ img {
   .services-bar__circle {
     width: 200px;
     height: 200px;
-    border-top-left-radius: 0;
+    border-top-left-radius: 100px;
     border-top-right-radius: 100px;
     border-bottom-right-radius: 100px;
     border-bottom-left-radius: 100px;
@@ -2353,7 +2359,7 @@ img {
 .custom-footer-ball {
   width: 60px;
   height: 60px;
-  border-radius: 0 100px 100px 100px;
+  border-radius: 100px 100px 100px 100px;
   display: flex;
   align-items: center;
   justify-content: center;

@@ -182,7 +182,10 @@ export default function Implementos() {
                       <div className="implementos-card-price">
                         {item.price}
                       </div>
-                      <Button className="implementos-card-btn">
+                      <Button 
+                        className="implementos-card-btn"
+                        onClick={() => window.location.href = 'mailto:comercial2@gruposvd.com.br'}
+                      >
                         Consultar Condições
                       </Button>
                     </div>
