@@ -344,7 +344,7 @@ export default function Sustentabilidade() {
           </div>
         </section>
 
-        {/* Reconhecimentos */}
+        {/* Reconhecimentos 
         <section className="awards-section">
           <div className="container">
             <h2 className="awards-title">
@@ -368,7 +368,7 @@ export default function Sustentabilidade() {
               ))}
             </div>
           </div>
-        </section>
+        </section>*/}
       </div>
       <HomeFooter />
     </>
