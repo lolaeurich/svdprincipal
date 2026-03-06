@@ -211,6 +211,34 @@ export default function Contato() {
           </div>
         </div>
       </section>
+
+      {/* Canal de Denúncias */}
+      <section className="whistleblower-section" style={{ padding: "5rem 0", backgroundColor: "#f8fafc" }}>
+        <div className="container">
+          <div style={{ maxWidth: "800px", margin: "0 auto", textAlign: "center" }}>
+            <h2 style={{ fontSize: "2.2rem", fontWeight: "bold", color: "#1e3a8a", marginBottom: "1rem" }}>
+              Canal de Denúncias – Grupo SVD
+            </h2>
+            <p style={{ fontSize: "1.25rem", fontWeight: "500", color: "#4b5563", marginBottom: "2rem" }}>
+              Compromisso com a ética, transparência e respeito em todas as relações
+            </p>
+            
+            <Card style={{ borderTop: "5px solid #dc2626", boxShadow: "0 10px 25px -5px rgba(0, 0, 0, 0.1)" }}>
+              <CardContent style={{ padding: "3rem 2rem" }}>
+                <p style={{ fontSize: "1.1rem", lineHeight: "1.8", color: "#374151", marginBottom: "2.5rem" }}>
+                  O Grupo SVD tem como princípio atuar com integridade, responsabilidade e transparência em todas as suas operações e relacionamentos. Para reforçar esse compromisso, disponibilizamos um Canal de Denúncias confidencial, seguro e imparcial, aberto a todos que queiram relatar condutas que estejam em desacordo com nossos valores ou com a legislação vigente.
+                </p>
+                <Button 
+                  onClick={() => window.open("https://forms.gle/xUN7wMHo7GL5Nf4G9", "_blank")}
+                  style={{ backgroundColor: "#dc2626", color: "white", padding: "1rem 2.5rem", fontSize: "1.1rem", fontWeight: "bold", borderRadius: "0.5rem" }}
+                >
+                  Fazer uma Denúncia
+                </Button>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
     </div>
           <HomeFooter />
 

@@ -1,5 +1,5 @@
 import React from "react";
-import { Leaf, Recycle, TreePine, Users, Target, Award, ShieldAlert } from "lucide-react";
+import { Leaf, Recycle, TreePine, Users, Target, Award, ShieldAlert, CheckCircle, Shield, BarChart3, HeartHandshake } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "../components/Card";
 import { Button } from "../components/Button";
 import AnimatedCounter from "../components/AnimatedCounter";
@@ -8,6 +8,7 @@ import HomeHeader from "../components/home/HomeHeader";
 import HomeFooter from "../components/home/HomeFooter";
 import sustentabilidadeBg from "../assets/sustentabilidade.jpg";
 import ppImg from "../assets/logos/pp.png";
+import despoluirLogo from "../assets/logos/LogoDespoluir.svg";
 import "../styles/Sustentabilidade.css";
 
 export default function Sustentabilidade() {
@@ -303,6 +304,121 @@ export default function Sustentabilidade() {
                   src={ppImg} 
                   alt="Selo Nós Apoiamos - Hospital Pequeno Príncipe" 
                   style={{ maxWidth: '280px', height: 'auto', display: 'block' }} 
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Rota Segura SVD */}
+        <section className="rota-segura-section" style={{ padding: '5rem 0' }}>
+          <div className="container">
+            <div style={{ maxWidth: '1000px', margin: '0 auto' }}>
+              <h2 className="initiatives-title" style={{ marginBottom: '1rem' }}>Rota Segura SVD</h2>
+              <h3 className="rota-segura-title-gradient">
+                Segurança como valor inegociável nas estradas do Brasil e do Mercosul
+              </h3>
+              
+              <div style={{ fontSize: '1.125rem', lineHeight: '1.8', color: '#cbd5e1', textAlign: 'center', marginBottom: '3rem' }}>
+                <p>
+                  No Grupo SVD, segurança não é apenas uma norma — é um compromisso diário com a vida. Pensando nisso, criamos o <strong>Rota Segura SVD</strong>, um programa interno de monitoramento, orientação e prevenção, voltado exclusivamente à segurança viária de nossas operações.
+                </p>
+              </div>
+
+              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '2rem', marginBottom: '3rem' }}>
+                {/* Card 1 */}
+                <div className="rota-segura-card-dark">
+                  <h4 className="rota-segura-card-title"><Shield className="text-emerald-400" /> O que é?</h4>
+                  <p className="text-slate-300 leading-relaxed">
+                    Programa contínuo de excelência operacional e gestão de risco. Garante que todos os trajetos, do embarque à entrega, sigam padrões elevados de segurança, eficiência e cuidado com o condutor, o veículo e a carga.
+                  </p>
+                </div>
+
+                {/* Card 2 */}
+                <div className="rota-segura-card-dark">
+                  <h4 className="rota-segura-card-title"><Target className="text-cyan-400" /> Principais Ações</h4>
+                  <ul className="text-slate-300 space-y-2">
+                    <li className="flex items-start gap-2"><span className="text-emerald-400"></span> Mapeamento de rotas e pontos críticos</li>
+                    <li className="flex items-start gap-2"><span className="text-emerald-400"></span> Treinamentos de direção defensiva</li>
+                    <li className="flex items-start gap-2"><span className="text-emerald-400"></span> Monitoramento via telemetria</li>
+                    <li className="flex items-start gap-2"><span className="text-emerald-400"></span> Integração com Programa PAZ</li>
+                  </ul>
+                </div>
+
+                {/* Card 3 */}
+                <div className="rota-segura-card-dark">
+                  <h4 className="rota-segura-card-title"><Award className="text-yellow-400" /> Estratégia</h4>
+                  <p className="text-slate-300 leading-relaxed">
+                    Integrado à nossa política ESG e certificações como a ISO 39001. O Rota Segura conecta-se aos treinamentos do programa Motorista Top Master e à atuação do Espaço do Cliente.
+                  </p>
+                </div>
+
+                {/* Card 4 */}
+                <div className="rota-segura-card-dark">
+                  <h4 className="rota-segura-card-title"><BarChart3 className="text-purple-400" /> Resultados</h4>
+                  <p className="text-slate-300 leading-relaxed">
+                    Redução significativa nos índices de incidentes, aumento do engajamento dos motoristas e ganhos comprovados em eficiência de combustível e performance.
+                  </p>
+                </div>
+              </div>
+
+              <div style={{ textAlign: 'center' }}>
+                <p style={{ fontWeight: 'bold', color: '#34d399', fontSize: '1.25rem', marginBottom: '0.5rem' }}>
+                  Mais do que números, o Rota Segura reforça nosso propósito: transportar sonhos com responsabilidade e respeito à vida.
+                </p>
+                <p style={{ color: '#94a3b8', fontStyle: 'italic' }}>
+                  Grupo SVD – Gestão, tecnologia e segurança unindo trajetos e transformando destinos.
+                </p>
+              </div>
+
+            </div>
+          </div>
+        </section>
+
+        {/* Programa Despoluir */}
+        <section className="despoluir-section" style={{ padding: '5rem 0', backgroundColor: '#f8fafc' }}>
+          <div className="container">
+            <h2 className="initiatives-title" style={{ marginBottom: '3rem', textAlign: 'center', color: '#1e3a8a' }}>Parceria com o Programa Despoluir</h2>
+            
+            <div className="despoluir-grid">
+              <div style={{ fontSize: '1.125rem', lineHeight: '1.8', color: '#374151' }}>
+                <p style={{ marginBottom: '1.5rem' }}>
+                  A SVD Transportes é parceira do <strong>Programa Despoluir</strong> – iniciativa da CNT (Confederação Nacional do Transporte) e do SEST SENAT – que visa promover a sustentabilidade ambiental no setor de transporte e logística, por meio da redução de emissão de poluentes e da melhoria da eficiência energética da frota.
+                </p>
+                <p style={{ marginBottom: '1.5rem' }}>
+                  Como empresa comprometida com os princípios ESG (Ambiental, Social e Governança), a SVD Transportes tem mantido sua frota sob constante avaliação das equipes do Despoluir. Esse trabalho conjunto garante que nossos veículos operem dentro dos padrões ambientais exigidos, reforçando nosso papel como referência em logística sustentável no Brasil e no Mercosul.
+                </p>
+                
+                <h4 style={{ fontSize: '1.25rem', fontWeight: 'bold', color: '#15803d', marginBottom: '1rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}><CheckCircle size={24}/> Resultados e benefícios:</h4>
+                <ul style={{ listStyle: 'none', padding: 0, marginBottom: '1.5rem' }}>
+                  {[
+                    "Redução comprovada na emissão de poluentes",
+                    "Melhoria contínua na eficiência e desempenho da frota",
+                    "Treinamentos e conscientização para motoristas e equipes operacionais",
+                    "Conformidade com normas ambientais nacionais e internacionais"
+                  ].map((item, i) => (
+                    <li key={i} style={{ display: 'flex', alignItems: 'flex-start', marginBottom: '0.5rem', paddingLeft: '0.5rem', borderLeft: '3px solid #15803d' }}>
+                      <span style={{ marginLeft: '0.5rem' }}>
+                      {item}
+                      </span>
+                    </li>
+                  ))}
+                </ul>
+
+                <p style={{ marginBottom: '1.5rem' }}>
+                  A parceria com o Despoluir complementa outras iniciativas sustentáveis do Grupo SVD, como a renovação da frota com caminhões Euro 6 e a implementação do Rota Segura, ampliando nosso compromisso com um transporte mais seguro, inteligente e ambientalmente responsável.
+                </p>
+                
+                <p style={{ fontWeight: 'bold', color: '#15803d', fontStyle: 'italic' }}>
+                  Seguimos transportando sonhos com responsabilidade, respeito ao meio ambiente e excelência operacional.
+                </p>
+              </div>
+
+              <div className="despoluir-logo-container">
+                 <img 
+                  src={despoluirLogo} 
+                  alt="Selo Programa Despoluir" 
+                  className="despoluir-logo-img"
                 />
               </div>
             </div>

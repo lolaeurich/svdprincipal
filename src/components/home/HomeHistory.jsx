@@ -12,7 +12,7 @@ export default function HomeHistory() {
           posicionadas, o Grupo SVD alia tradição e inovação, garantindo excelência em cada solução oferecida, 
           sempre com o compromisso de "Transportar Sonhos".
         </p>
-        <a href="#" className="home-history__button">LEIA MAIS...</a>
+        <a href="/sobre" className="home-history__button">LEIA MAIS...</a>
       </div>
     </section>
   );

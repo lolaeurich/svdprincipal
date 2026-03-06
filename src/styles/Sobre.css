@@ -355,7 +355,7 @@
 /* CERTIFICAÇÕES */
 .sobre-certificacoes {
   padding: 5rem 1.5rem;
-  background-color: #fff;
+  background: #fff;
 }
 
 .sobre-cert-bloco {
@@ -454,5 +454,40 @@
   .home-certifications__image-content {
     flex: 1;
     max-width: 45%;
+  }
+}
+
+.home-certifications__container--oea {
+  margin-bottom: 4rem;
+  background: linear-gradient(145deg, #ffffff, #f0f9ff);
+  padding: 3rem;
+  border-radius: 1.5rem;
+  border: 1px solid #22d3ee;
+  box-shadow: 0 0 30px rgba(34, 211, 238, 0.25), inset 0 0 20px rgba(34, 211, 238, 0.05);
+  position: relative;
+  overflow: hidden;
+}
+
+.home-certifications__container--oea .home-certifications__title {
+  color: #0f172a;
+  text-shadow: none;
+}
+
+.home-certifications__container--oea .home-certifications__description {
+  color: #334155;
+}
+
+.home-certifications__container--oea strong {
+  color: #0284c7;
+}
+
+.home-certifications__oea-img {
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .home-certifications__container--oea {
+    padding: 1.5rem;
   }
 }

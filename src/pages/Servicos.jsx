@@ -1,5 +1,5 @@
 import React from "react";
-import { Truck, Package, Shield, Clock, Globe, Settings, ClipboardCheck } from "lucide-react";
+import { Truck, Package, ClipboardCheck, Wrench, Container } from "lucide-react";
 import Topbar from "../components/home/TopBar";
 import HomeHeader from "../components/home/HomeHeader";
 import HomeFooter from "../components/home/HomeFooter";
@@ -37,28 +37,34 @@ export default function Servicos() {
       features: ["Frota própria", "Rastreamento em tempo real", "Seguro total", "Cobertura nacional"]
     },
     {
-      icon: <Package className="w-12 h-12 text-red-600" />,
+      icon: <Package className="w-12 h-12 text-orange-500" />,
       title: "Logística Integrada",
       description: "Gestão completa da cadeia logística com armazenagem, distribuição, entrega técnica e controle de estoque.",
       features: ["Armazenagem", "Distribuição", "Controle de estoque", "Entrega Técnica de veículos"]
     },
     {
-      icon: <Settings className="w-12 h-12 text-blue-500" />,
-      title: "Consultoria Logística",
-      description: "Análise e otimização de processos logísticos para redução de custos e aumento de eficiência.",
-      features: ["Análise de processos", "Redução de custos", "Otimização de rotas", "Relatórios detalhados"]
-    },
-    {
       icon: <ClipboardCheck className="w-12 h-12 text-green-600" />,
       title: "Entrega Técnica",
       description: "O momento em que o cliente recebe o veículo totalmente preparado, personalizado e revisado, acompanhado de uma explicação técnica detalhada.",
-      features: [
-        "Funcionamento de sistemas e tecnologias embarcadas",
-        "Itens personalizados e acessórios instalados",
-        "Cuidados operacionais e de manutenção preventiva",
-        "Checklist final de qualidade",
-        "Dúvidas técnicas do cliente"
-      ]
+      features: ["Sistemas e tecnologias embarcadas", "Itens personalizados e acessórios", "Cuidados operacionais e manutenção", "Checklist final de qualidade"]
+    },
+    {
+      icon: <Truck className="w-12 h-12 text-yellow-500" />,
+      title: "Venda de Seminovos",
+      description: "Caminhões seminovos com garantia de procedência e as melhores condições do mercado.",
+      features: ["Veículos revisados", "Garantia e procedência", "Opções de financiamento", "Amplo estoque de marcas"]
+    },
+    {
+      icon: <Wrench className="w-12 h-12 text-blue-500" />,
+      title: "Acessórios",
+      description: "Venda e fabricação de acessórios para personalizar e otimizar seu caminhão.",
+      features: ["Fabricação própria", "Produtos personalizados", "Catálogo completo", "Instalação especializada"]
+    },
+    {
+      icon: <Container className="w-12 h-12 text-purple-500" />,
+      title: "Implementos Rodoviários",
+      description: "Comercialização de uma vasta gama de implementos rodoviários novos e usados.",
+      features: ["Graneleiros e Siders", "Baús e Tanques", "Porta-Containers", "Soluções sob medida"]
     }
   ];
 

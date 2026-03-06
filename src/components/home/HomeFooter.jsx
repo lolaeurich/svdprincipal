@@ -4,7 +4,7 @@ import logoBranca from "../../assets/logo-branca.png";
 import transportesLogo from "../../assets/logos/transportes-logo.png";
 import acessoriosLogo from "../../assets/logos/acessorios-logo.png";
 import seminovosLogo from "../../assets/logos/seminovos-logo.png";
-import implementosLogo from "../../assets/logos/implementos-logo.png";
+import implementosLogo from "../../assets/logos/funilaria.png";
 import { Facebook, Instagram, Linkedin, Mail } from "lucide-react";
 
 export default function HomeFooter() {
