@@ -50,7 +50,7 @@ export default function Servicos() {
     },
     {
       icon: <Truck className="w-12 h-12 text-yellow-500" />,
-      title: "Venda de Seminovos",
+      title: "Seminovos",
       description: "Caminhões seminovos com garantia de procedência e as melhores condições do mercado.",
       features: ["Veículos revisados", "Garantia e procedência", "Opções de financiamento", "Amplo estoque de marcas"]
     },

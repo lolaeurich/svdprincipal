@@ -4,7 +4,7 @@ import logoBranca from "../../assets/logo-branca.png";
 import transportesLogo from "../../assets/logos/transportes-logo.png";
 import acessoriosLogo from "../../assets/logos/acessorios-logo.png";
 import seminovosLogo from "../../assets/logos/seminovos-logo.png";
-import implementosLogo from "../../assets/logos/funilaria.png";
+import implementosLogo from "../../assets/logos/logistica.png";
 import { Facebook, Instagram, Linkedin, Mail } from "lucide-react";
 
 export default function HomeFooter() {
@@ -78,10 +78,10 @@ export default function HomeFooter() {
                 <Link to="/transporte" className="custom-footer-link">Transporte e Armazenagem</Link>
               </li>
               <li>
-                <Link to="/transporte" className="custom-footer-link">Seminovos</Link>
+                <a href="https://svdseminovos.com.br/" target="_blank" rel="noopener noreferrer" className="custom-footer-link">Seminovos</a>
               </li>
               <li>
-                <Link to="/transporte" className="custom-footer-link">Acessórios</Link>
+                <a href="https://svdacessorios.com.br/" target="_blank" rel="noopener noreferrer" className="custom-footer-link">Acessórios</a>
               </li>
               <li>
                 {/*<Link to="/logistica" className="custom-footer-link">Logística</Link>*/}
@@ -116,6 +116,9 @@ export default function HomeFooter() {
                 <Link to="/cadastrofornecedores" className="custom-footer-link">Cadastro de Fornecedores</Link>
               </li>
               <li>
+                <Link to="/denuncias" className="custom-footer-link">Canal de Denúncias</Link>
+              </li>
+              <li>
                 <Link to="/politica-privacidade" className="custom-footer-link">Política de Privacidade</Link>
               </li>
               <li>
@@ -145,11 +148,17 @@ export default function HomeFooter() {
                   <img src={transportesLogo} alt="Transportes" className="custom-footer-ball-icon" />
                 </div>
               </div>
-              <div className="custom-footer-ball custom-footer-ball-lime">
+              <a 
+                href="https://svdacessorios.com.br/" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="custom-footer-ball custom-footer-ball-lime"
+                style={{ display: "inline-block" }}
+              >
                 <div className="custom-footer-ball-inner">
                   <img src={acessoriosLogo} alt="Acessórios" className="custom-footer-ball-icon" />
                 </div>
-              </div>
+              </a>
               <a
                 href="https://svdseminovos.com.br/"
                 target="_blank"
@@ -161,7 +170,7 @@ export default function HomeFooter() {
                   <img src={seminovosLogo} alt="Seminovos" className="custom-footer-ball-icon" />
                 </div>
               </a>
-              <div className="custom-footer-ball custom-footer-ball-red">
+              <div className="custom-footer-ball custom-footer-ball-purple" >
                 <div className="custom-footer-ball-inner">
                   <img src={implementosLogo} alt="Implementos" className="custom-footer-ball-icon" />
                 </div>

@@ -174,13 +174,13 @@
 .contact-form-map-grid {
   display: grid;
   gap: 3rem; /* gap-12 */
-  max-width: 84rem; /* max-w-7xl */
+  max-width: 64rem; /* Reduzido para não ficar excessivamente largo */
   margin-left: auto;
   margin-right: auto;
 }
 @media (min-width: 1024px) {
   .contact-form-map-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr)); /* lg:grid-cols-2 */
+    grid-template-columns: 1fr; /* Agora ocupa 1 coluna inteira */
   }
 }
 
@@ -298,13 +298,13 @@
 .contact-form-map-grid {
   display: grid;
   gap: 3rem;
-  max-width: 84rem;
+  max-width: 64rem;
   margin-left: auto;
   margin-right: auto;
 }
 @media (min-width: 1024px) {
   .contact-form-map-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: 1fr;
   }
 }
 

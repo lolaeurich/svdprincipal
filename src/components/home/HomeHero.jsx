@@ -4,7 +4,7 @@ import logoAzul from "../../assets/logo-branca.png";
 import faleconosco from "../../assets/service-item/faleconosco.png";
 import ouvidoria from "../../assets/service-item/helpdesk.png";
 import trabalheconosco from "../../assets/service-item/trabalhe.png";
-import motoristamei from "../../assets/service-item/mei.png";
+import motoristamei from "../../assets/service-item/iconfornecedor.png";
 import areadocolaborador from "../../assets/service-item/team.png";
 import transportes from "../../assets/logos/transportes-logo.png"
 import acessorios from "../../assets/logos/acessorios-logo.png"
@@ -53,13 +53,17 @@ export default function HomeHero() {
                 <img src={faleconosco} alt="Fale Conosco" className="service-item__icon" />
                 <p className="service-item__text">FALE CONOSCO</p>
               </Link>
-              <Link to="/contato" className="service-item" style={{ textDecoration: 'none' }}>
+              <a href="https://forms.gle/xUN7wMHo7GL5Nf4G9" target="_blank" rel="noopener noreferrer" className="service-item" style={{ textDecoration: 'none' }}>
                 <img src={ouvidoria} alt="Ouvidoria" className="service-item__icon" />
                 <p className="service-item__text">OUVIDORIA</p>
-              </Link>
+              </a>
               <Link to="/trabalhe-conosco" className="service-item" style={{ textDecoration: 'none' }}>
                 <img src={trabalheconosco} alt="Trabalhe Conosco" className="service-item__icon" />
                 <p className="service-item__text">TRABALHE CONOSCO</p>
+              </Link>
+              <Link to="/cadastrofornecedores" className="service-item" style={{ textDecoration: 'none' }}>
+                <img src={motoristamei} alt="Cadastro de Fornecedores" className="service-item__icon" />
+                <p className="service-item__text">CADASTRO DE<br />FORNECEDORES</p>
               </Link>
             </div>
         </div>
@@ -93,7 +97,7 @@ function ServicesBar({ logoAzul }) {
     </div>,
     <a
       key="green"
-      href="https://svdseminovos.com.br/"
+      href="https://svdacessorios.com.br/"
       target="_blank"
       rel="noopener noreferrer"
       className="services-bar__circle services-bar__circle--green"
@@ -103,11 +107,18 @@ function ServicesBar({ logoAzul }) {
         <img src={acessorios} alt="SVD Acessórios" />
       </div>
     </a>,
-    <div key="blue" className="services-bar__circle services-bar__circle--blue">
+    <a
+      key="blue"
+      href="https://svdseminovos.com.br/"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="services-bar__circle services-bar__circle--blue"
+      style={{ display: "block" }}
+    >
       <div className='services-bar__circle-inner-secondary'>
         <img src={seminovos} alt="SVD Seminovos" />
       </div>
-    </div>,
+    </a>,
     <div key="red" className="services-bar__circle services-bar__circle--red">
       <div className='services-bar__circle-inner-secondary'>
         <img src={implementos} alt="SVD Implementos Rodoviários" style={{ width: "85%", height: "90px" }} />

@@ -1,0 +1,104 @@
+.denuncias-root {
+  background-color: #f8fafc;
+}
+
+.denuncias-hero {
+  position: relative;
+  background: linear-gradient(rgba(220, 53, 69, 0.8), rgba(179, 24, 39, 0.8)), url('../assets/home-second.jpeg') center center/cover no-repeat;
+  padding: 12rem 1rem;
+  color: white;
+  text-align: center;
+}
+
+.denuncias-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.denuncias-hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+.denuncias-hero-title {
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+}
+
+.denuncias-hero-subtitle {
+  font-size: 1.25rem;
+  max-width: 600px;
+  margin: 0 auto;
+  opacity: 0.9;
+}
+
+.denuncias-content-section {
+  padding: 5rem 1rem;
+}
+
+.denuncias-content-wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.denuncias-section-title {
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: #1e3a8a;
+  margin-bottom: 1rem;
+}
+
+.denuncias-section-subtitle {
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: #4b5563;
+  margin-bottom: 2rem;
+}
+
+.denuncias-card {
+  border-top: 5px solid #dc2626;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  border-radius: 0.75rem;
+}
+
+.denuncias-card-content {
+  padding: 3rem 2rem;
+}
+
+.denuncias-card-text {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #374151;
+  margin-bottom: 2.5rem;
+}
+
+.denuncias-button {
+  background-color: #dc2626;
+  color: white;
+  padding: 1rem 2.5rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  transition: background-color 0.3s;
+  border: none;
+  cursor: pointer;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.denuncias-button:hover {
+  background-color: #b91c1c;
+}
+
+.denuncias-button-icon {
+  width: 20px;
+  height: 20px;
+}

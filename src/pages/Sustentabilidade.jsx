@@ -47,11 +47,6 @@ export default function Sustentabilidade() {
       year: "2025"
     },
     {
-      title: "2026: Carbono Neutro",
-      description: "Neutralização total das emissões de carbono através de projetos ambientais",
-      year: "2026"
-    },
-    {
       title: "2027: Energia Limpa", 
       description: "100% da operação alimentada por energia solar e eólica",
       year: "2027"
@@ -103,7 +98,7 @@ export default function Sustentabilidade() {
         </section>
 
         {/* Estatísticas Animadas */}
-        <section className="stats-section">
+        {/*<section className="stats-section">
           <div className="container">
             <div className="stats-grid">
               {stats.map((stat, index) => (
@@ -123,7 +118,7 @@ export default function Sustentabilidade() {
               ))}
             </div>
           </div>
-        </section>
+        </section>*/}
 
         {/* Compromisso Ambiental & SGI */}
         <section className="sgi-section" style={{ padding: '5rem 0', backgroundColor: '#fff' }}>
@@ -237,7 +232,7 @@ export default function Sustentabilidade() {
         </section>
 
         {/* Compromissos Ambientais */}
-        <section className="commitments-section">
+       {/*} <section className="commitments-section">
           <div className="container">
             <div className="commitments-grid">
               <div className="commitments-content-wrapper">
@@ -274,13 +269,13 @@ export default function Sustentabilidade() {
               </div>
             </div>
           </div>
-        </section>
+        </section>*/}
 
         {/* Apoio Hospital Pequeno Príncipe */}
         <section className="social-support-section" style={{ padding: '5rem 0', backgroundColor: '#f8fafc' }}>
           <div className="container">
             <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center', gap: '2rem' }}>
-              <h2 className="initiatives-title">Responsabilidade Sócio Ambiental</h2>
+              <h2 className="initiatives-title">Responsabilidade Socioambiental</h2>
               <div style={{ maxWidth: '800px', fontSize: '1.125rem', lineHeight: '1.8', color: '#374151', textAlign: 'left' }}>
                 <h3 style={{ fontSize: '1.5rem', fontWeight: 'bold', color: '#15803d', marginBottom: '1.5rem', textAlign: 'center' }}>
                   SVD e Hospital Pequeno Príncipe: uma parceria que transforma vidas

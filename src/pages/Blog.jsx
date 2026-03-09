@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useSearchParams } from "react-router-dom";
 import { Search, Calendar, User, ChevronRight, Tag } from "lucide-react";
 import Topbar from "../components/home/TopBar";
 import HomeHeader from "../components/home/HomeHeader";
@@ -11,7 +12,8 @@ import homeSecond from "../assets/home-second.jpeg";
 import "../styles/Blog.css";
 
 export default function Blog() {
-  const [searchTerm, setSearchTerm] = useState("");
+  const [searchParams] = useSearchParams();
+  const [searchTerm, setSearchTerm] = useState(searchParams.get("q") || "");
   const [selectedTag, setSelectedTag] = useState("todos");
 
   const tags = ["Todos", "Logística", "Tecnologia", "Sustentabilidade", "Mercado", "Dicas"];

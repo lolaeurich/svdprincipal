@@ -22,6 +22,7 @@ import AreaColaborador from "./pages/AreaColaborador";
 import AreaMEI from "./pages/AreaMEI";
 import AreaPrestadorServicos from "./pages/AreaPrestadorServicos";
 import CadastroFornecedores from "./pages/CadastroFornecedores";
+import Denuncias from "./pages/Denuncias";
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -59,6 +60,7 @@ function App() {
         <Route path="/areamei" element={<AreaMEI />} />
         <Route path="/areaprestador" element={<AreaPrestadorServicos />} />
         <Route path="/cadastrofornecedores" element={<CadastroFornecedores />} />
+        <Route path="/denuncias" element={<Denuncias />} />
       </Routes>
     </Router>
   );

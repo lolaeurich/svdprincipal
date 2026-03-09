@@ -78,7 +78,7 @@ export default function AreaMEI() {
             <Button 
               className="mei-btn-cta"
               onClick={() => window.location.href = 'mailto:Eliziane.hyrayama@gruposvd.com.br'}
-            >Quero ser MEI</Button>
+            >Quero ser motorista MEI</Button>
           </div>
         </div>
       </section>

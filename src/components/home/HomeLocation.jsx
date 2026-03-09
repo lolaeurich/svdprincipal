@@ -7,6 +7,7 @@ const MAPS = {
   "Transportes - São Bernardo": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.351234567890!2d-46.585123456789!3d-23.735123456789!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce423456789abc%3A0x123456789abcdef!2sEstr.%20da%20Cama%20Patente%2C%202300%20-%20Parque%20Esmeralda%2C%20S%C3%A3o%20Bernardo%20do%20Campo%20-%20SP%2C%2009842-100!5e0!3m2!1spt-BR!2sbr!4v1716392000000!5m2!1spt-BR!2sbr",
   "Transportes - Ponta Grossa": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3602.019532574969!2d-50.01820782440193!3d-25.09988997780316!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94e811b0e3d6e2e1%3A0x2e1e7e8b7b7c7e7e!2sRod.%20do%20Caf%C3%A9%20-%20Colonia%20Dona%20Luiza%2C%20Ponta%20Grossa%20-%20PR%2C%2084046-050!5e0!3m2!1spt-BR!2sbr!4v1716391000000!5m2!1spt-BR!2sbr",
   "Transportes - São Borja": "https://maps.google.com/maps?q=BR+285+KM678+Centro+Unificado+de+Fronteira+-+S%C3%A3o+Borja,+RS&t=&z=13&ie=UTF8&iwloc=&output=embed",
+  "Transportes - Canoas": "https://maps.google.com/maps?q=Rua+Juscelino+Kubitscheck+de+Oliveira,+800,+bairro+São+José,+Canoas/RS,+Brasil,+CEP:+92.420-540&t=&z=13&ie=UTF8&iwloc=&output=embed",
 };
 
 const LOCATIONS = [
@@ -16,6 +17,7 @@ const LOCATIONS = [
   { name: "Transportes - São Bernardo", address: "Estrada da Cama Patente, 2300 - Sitio Santa - Bairro Alvarenga, SP" },
   { name: "Transportes - Ponta Grossa", address: "Av. Senador Flávio Carvalho Guimarães, KM 168 - Ponta Grossa, PR" },
   { name: "Transportes - São Borja", address: "BR 285 KM678 Centro Unificado de Fronteira - São Borja, RS" },
+  { name: "Transportes - Canoas", address: "Rua Juscelino Kubitscheck de Oliveira, 800, São José, Canoas/RS, 92.420-540" },
 ];
 
 export default function HomeLocation() {

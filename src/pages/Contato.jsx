@@ -183,59 +183,6 @@ export default function Contato() {
                 </form>
               </CardContent>
             </Card>
-
-            {/* Mapa */}
-            <div className="map-and-promo">
-              <Card className="map-card">
-                <CardHeader>
-                  <CardTitle className="map-title">Nossa Localização</CardTitle>
-                  <p className="map-subtitle">Visite nossa sede ou agende uma reunião conosco.</p>
-                </CardHeader>
-                <CardContent>
-                  <div className="map-wrapper">
-                   <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3600.279767793838!2d-49.34969792376189!3d-25.54924846747513!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dcfb73229b9f71%3A0xf64f5a34a8722956!2sR.%20Edmundo%20Eckstein%2C%20888%20-%20Cidade%20Industrial%20de%20Curitiba%2C%20Curitiba%20-%20PR%2C%2081290-080!5e0!3m2!1spt-BR!2sbr!4v1726058690466!5m2!1spt-BR!2sbr"
-                    width="100%"
-                    height="100%"
-                    style={{ border: 0 }}
-                    allowFullScreen=""
-                    loading="lazy"
-                    referrerPolicy="no-referrer-when-downgrade"
-                    className="map-iframe"
-                  ></iframe>
-                  </div>
-                </CardContent>
-              </Card>
-
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Canal de Denúncias */}
-      <section className="whistleblower-section" style={{ padding: "5rem 0", backgroundColor: "#f8fafc" }}>
-        <div className="container">
-          <div style={{ maxWidth: "800px", margin: "0 auto", textAlign: "center" }}>
-            <h2 style={{ fontSize: "2.2rem", fontWeight: "bold", color: "#1e3a8a", marginBottom: "1rem" }}>
-              Canal de Denúncias – Grupo SVD
-            </h2>
-            <p style={{ fontSize: "1.25rem", fontWeight: "500", color: "#4b5563", marginBottom: "2rem" }}>
-              Compromisso com a ética, transparência e respeito em todas as relações
-            </p>
-            
-            <Card style={{ borderTop: "5px solid #dc2626", boxShadow: "0 10px 25px -5px rgba(0, 0, 0, 0.1)" }}>
-              <CardContent style={{ padding: "3rem 2rem" }}>
-                <p style={{ fontSize: "1.1rem", lineHeight: "1.8", color: "#374151", marginBottom: "2.5rem" }}>
-                  O Grupo SVD tem como princípio atuar com integridade, responsabilidade e transparência em todas as suas operações e relacionamentos. Para reforçar esse compromisso, disponibilizamos um Canal de Denúncias confidencial, seguro e imparcial, aberto a todos que queiram relatar condutas que estejam em desacordo com nossos valores ou com a legislação vigente.
-                </p>
-                <Button 
-                  onClick={() => window.open("https://forms.gle/xUN7wMHo7GL5Nf4G9", "_blank")}
-                  style={{ backgroundColor: "#dc2626", color: "white", padding: "1rem 2.5rem", fontSize: "1.1rem", fontWeight: "bold", borderRadius: "0.5rem" }}
-                >
-                  Fazer uma Denúncia
-                </Button>
-              </CardContent>
-            </Card>
           </div>
         </div>
       </section>

@@ -9,7 +9,13 @@ export default function HomeHeader() {
 
   const handleSearchChange = (event) => {
     setSearchQuery(event.target.value);
-    console.log("Current search query:", event.target.value);
+  };
+
+  const handleSearchSubmit = (e) => {
+    if ((e.key === 'Enter' || e.type === 'click') && searchQuery.trim()) {
+      navigate(`/blog?q=${encodeURIComponent(searchQuery)}`);
+      setMenuOpen(false);
+    }
   };
 
   const handleToggleMenu = () => {
@@ -92,7 +98,7 @@ export default function HomeHeader() {
           </ul>
           {/* Input de busca DENTRO do dropdown */}
           <div className="home-header__dropdown-search">
-            <span className="home-header__search-icon">
+            <span className="home-header__search-icon" onClick={handleSearchSubmit} style={{ cursor: 'pointer' }}>
               <svg width="20" height="20" fill="none" viewBox="0 0 24 24">
                 <circle cx="11" cy="11" r="7" stroke="#004aad" strokeWidth="2"/>
                 <path d="M20 20L16.65 16.65" stroke="#004aad" strokeWidth="2" strokeLinecap="round"/>
@@ -104,28 +110,28 @@ export default function HomeHeader() {
               className="home-header__search-input"
               value={searchQuery}
               onChange={handleSearchChange}
+              onKeyDown={handleSearchSubmit}
             />
           </div>
         </nav>
         
         {/* Search Field - only for desktop */}
-        {window.innerWidth >= 1201 && (
-          <div className="home-header__search-bar">
-            <span className="home-header__search-icon">
-              <svg width="20" height="20" fill="none" viewBox="0 0 24 24">
-                <circle cx="11" cy="11" r="7" stroke="#004aad" strokeWidth="2"/>
-                <path d="M20 20L16.65 16.65" stroke="#004aad" strokeWidth="2" strokeLinecap="round"/>
-              </svg>
-            </span>
-            <input
-              type="text"
-              placeholder="Pesquisar"
-              className="home-header__search-input"
-              value={searchQuery}
-              onChange={handleSearchChange}
-            />
-          </div>
-        )}
+        <div className="home-header__search-bar">
+          <span className="home-header__search-icon" onClick={handleSearchSubmit} style={{ cursor: 'pointer' }}>
+            <svg width="20" height="20" fill="none" viewBox="0 0 24 24">
+              <circle cx="11" cy="11" r="7" stroke="#004aad" strokeWidth="2"/>
+              <path d="M20 20L16.65 16.65" stroke="#004aad" strokeWidth="2" strokeLinecap="round"/>
+            </svg>
+          </span>
+          <input
+            type="text"
+            placeholder="Pesquisar"
+            className="home-header__search-input"
+            value={searchQuery}
+            onChange={handleSearchChange}
+            onKeyDown={handleSearchSubmit}
+          />
+        </div>
         
         {/* Hamburger menu button */}
         <button className="home-header__toggle" aria-label="Abrir menu" onClick={handleToggleMenu}>

@@ -9,7 +9,6 @@ import ppImg from "../assets/logos/pp.png";
 import cert9001 from "../assets/certificados/conformidade1.png";
 import cert14001 from "../assets/certificados/conformidade2.png";
 import cert39001 from "../assets/certificados/conformidade3.png";
-import iso from "../assets/certificados/iso.png";
 import ods from "../assets/service-item/ods.png";
 import aeo from "../assets/certificados/aeo.png";
 import "../styles/Sobre.css";
@@ -71,10 +70,9 @@ export default function QuemSomos() {
   ];
 
   const stats = [
-    { number: "23", label: "Anos de Experiência", suffix: "" },
+    { number: "25", label: "Anos de Experiência", suffix: "" },
     { number: "500", label: "Colaboradores", suffix: "+" },
     { number: "10000", label: "Clientes Atendidos", suffix: "+" },
-    { number: "95", label: "Satisfação do Cliente", suffix: "%" }
   ];
 
   return (
@@ -180,15 +178,12 @@ export default function QuemSomos() {
                 <img src={aeo} alt="Selo Operador Econômico Autorizado (OEA)" className="home-certifications__oea-img" />
               </div>
               <div className="home-certifications__text-content">
-                <h2 className="home-certifications__title">EOA – Entrega Operacional Assistida do Grupo SVD</h2>
+                <h2 className="home-certifications__title">OEA – Operador Econômico Autorizado</h2>
                 <p className="home-certifications__description">
-                  <strong>Tecnologia, eficiência e segurança na entrega de veículos pesados</strong>
+                  <strong>Segurança e agilidade no comércio internacional</strong>
                 </p>
                 <p className="home-certifications__description">
-                  No Grupo SVD, acreditamos que a excelência logística não termina com o transporte. Ela se estende até o momento mais decisivo: a entrega técnica do veículo. É por isso que oferecemos o serviço EOA – Entrega Operacional Assistida, um modelo exclusivo de atendimento personalizado, voltado à capacitação e orientação dos condutores no recebimento de caminhões e máquinas.
-                </p>
-                <p className="home-certifications__description">
-                  Com foco na segurança operacional, na eficiência da condução e na redução de custos logísticos, a EOA garante que cada cliente receba seu veículo pronto para operar, com o máximo aproveitamento dos recursos tecnológicos embarcados.
+                  O Grupo SVD é certificado como Operador Econômico Autorizado (OEA), um selo de confiança da Receita Federal que reconhece empresas que cumprem rigorosos critérios de segurança da cadeia logística e conformidade aduaneira. Essa certificação nos posiciona como um parceiro estratégico no comércio exterior, garantindo processos de importação e exportação mais ágeis, seguros e com menos burocracia para nossos clientes.
                 </p>
               </div>
             </div>
@@ -201,9 +196,9 @@ export default function QuemSomos() {
                   A SVD Transportes é sinônimo de qualidade, segurança e sustentabilidade, refletidos nas certificações que orgulhosamente ostentamos:
                 </p>
                 <ul className="home-certifications__list">
-                  <li><p><strong>ISO 9001:</strong> Garante a excelência na gestão da qualidade.</p></li>
-                  <li><p><strong>ISO 14001:</strong> Reafirma nosso compromisso com a gestão ambiental.</p></li>
-                  <li><p><strong>ISO 39001:</strong> Específica para segurança viária e operações logísticas.</p></li>
+                  <li><p><strong>ISO 9001 – Gestão da Qualidade:</strong> Certificação internacional que garante a excelência na gestão da qualidade, assegurando processos padronizados, melhoria contínua e alto nível de eficiência nos serviços prestados.</p></li>
+                  <li><p><strong>ISO 14001 – Gestão Ambiental:</strong> Reforça o compromisso do Grupo SVD com a sustentabilidade e a gestão ambiental responsável, promovendo práticas que reduzem impactos ao meio ambiente e incentivam o uso consciente de recursos.</p></li>
+                  <li><p><strong>ISO 39001 – Segurança Viária:</strong> Norma internacional voltada à segurança no transporte rodoviário, que estabelece diretrizes para reduzir riscos, prevenir acidentes e garantir operações logísticas mais seguras para colaboradores, clientes e para a sociedade.</p></li>
                 </ul>
               </div>
               <div className="home-certifications__image-content">
@@ -211,9 +206,6 @@ export default function QuemSomos() {
                   <img src={cert9001} alt="Certificado ISO 9001" className="certificate-image" />
                   <img src={cert14001} alt="Certificado ISO 14001" className="certificate-image" />
                   <img src={cert39001} alt="Certificado ISO 39001" className="certificate-image" />
-                </div>
-                <div className="iso-seal">
-                  <img src={iso} alt="Selo ISO" className="iso-seal__image" />
                 </div>
               </div>
             </div>

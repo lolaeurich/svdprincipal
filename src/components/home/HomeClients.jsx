@@ -15,7 +15,7 @@ export default function HomeClients() {
   return (
     <section className="home-clients">
       <div className="home-clients__container container">
-        <h2 className="home-clients__title">Nossos Clientes</h2>
+        <h2 className="home-clients__title">Principais Clientes</h2>
         
         <div className="home-clients__logos">
           {/* Primeira Linha (4 logos no desktop) */}

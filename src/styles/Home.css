@@ -791,7 +791,7 @@ img {
 
 .certificate-images {
   display: flex;
-  gap: 0px;
+  gap: 1rem;
   justify-content: center;
   align-items: center;
   margin-bottom: 18px;
@@ -833,6 +833,7 @@ img {
     align-items: center;
     justify-content: center;
     margin-bottom: 2rem;
+    flex-wrap: nowrap;
   }
 
   .certificate-placeholder {
@@ -1172,7 +1173,7 @@ img {
    ======================= */
 .home-location {
   min-height: 80vh;
-  height: 90vh;
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -2270,6 +2271,13 @@ img {
 .custom-footer-linkedin {
   background: linear-gradient(90deg, #1d4ed8, #6366f1);
 }
+.custom-footer-social-icon a {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
 .custom-footer-social-icon:hover {
   box-shadow: 0 0 12px 2px rgba(34,211,238,0.18);
   transform: scale(1.08);
@@ -2404,6 +2412,9 @@ img {
 }
 .custom-footer-ball-yellow {
   background: #fde047;
+}
+.custom-footer-ball-purple {
+  background: #450d7e;
 }
 .custom-footer-ball-icon-yellow {
   color: #fde047;
