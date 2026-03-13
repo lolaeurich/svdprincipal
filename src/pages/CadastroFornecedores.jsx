@@ -8,6 +8,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from ".
 import Topbar from "../components/home/TopBar";
 import HomeHeader from "../components/home/HomeHeader";
 import HomeFooter from "../components/home/HomeFooter";
+import manualFornecedorPDF from "../assets/documentos/manualFornecedor.pdf";
 import "../styles/CadastroFornecedores.css";
 
 export default function CadastroFornecedores() {
@@ -73,9 +74,9 @@ export default function CadastroFornecedores() {
                     <h4 style={{ fontWeight: 'bold', color: '#1e293b', marginBottom: '0.25rem' }}>Manual de Conduta e Homologação</h4>
                     <p style={{ fontSize: '0.9rem', color: '#64748b' }}>PDF - Leitura Obrigatória</p>
                   </div>
-                  <Button variant="outline" onClick={() => window.open('/manual-fornecedores.pdf', '_blank')} style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+                  <Button variant="outline" onClick={() => window.open(manualFornecedorPDF, '_blank')} style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
                     <Download size={18} />
-                    Baixar Documento
+                    ㅤBaixar Documento
                   </Button>
                 </div>
               </CardContent>
