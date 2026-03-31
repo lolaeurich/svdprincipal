@@ -6,6 +6,12 @@
   outline: none;
   transition: border-color 0.2s ease;
   background-color: #fff;
+  color: #1e293b;
+}
+
+.custom-input2::placeholder {
+  color: #94a3b8;
+  opacity: 1;
 }
 
 .custom-input2:focus {
@@ -18,13 +24,30 @@
   padding: 0.75rem 1rem; /* p-3 */
   font-size: 1rem;
   line-height: 1.5;
-  color: #f9fafc;
+  color: #1e293b;
   background-color: #fff; /* Fundo branco para os inputs */
   background-clip: padding-box;
   border: 1px solid #d1d5db; /* Cor da borda */
   border-radius: 0.5rem; /* rounded-lg */
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   background-color: #fff;
+}
+
+.input::placeholder, .textarea::placeholder {
+  color: #94a3b8;
+  opacity: 1;
+}
+
+/* Garante que as opções do Select (dropdown) sejam visíveis */
+[role="option"], 
+[data-radix-select-item],
+.SelectItem {
+  color: #1e293b !important;
+  background-color: #ffffff !important;
+}
+
+[role="option"]:hover {
+  background-color: #f1f5f9 !important;
 }
 
 .input:focus, .textarea:focus {

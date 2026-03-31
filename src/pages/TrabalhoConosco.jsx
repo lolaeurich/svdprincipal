@@ -217,7 +217,10 @@ export default function TrabalhoConosco() {
                       </div>
                       <div>
                         <label className="form-label">Categoria do Veículo *</label>
-                        <Select onValueChange={(value) => setFormData({...formData, area: value})}>
+                        <Select
+                          value={formData.area}
+                          onValueChange={(value) => setFormData({...formData, area: value})}
+                        >
                           <SelectTrigger>
                             <SelectValue placeholder="Selecione a categoria" />
                           </SelectTrigger>

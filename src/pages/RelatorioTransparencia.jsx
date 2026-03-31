@@ -7,6 +7,7 @@ import "../styles/RelatorioTransparencia.css";
 import des1 from "../assets/blog/igualdade1.png";
 import des2 from "../assets/blog/igualdade2.png";
 import des3 from "../assets/blog/igualdade3.png";
+import relatorioTransparenciaImg from "../assets/documentos/image.png";
 
 export default function RelatorioTransparencia() {
   const salaryData = [
@@ -105,6 +106,11 @@ export default function RelatorioTransparencia() {
                 </p>
               </div>
               <div style={{ display: "flex", flexDirection: "column",justifyContent: "space-around", alignItems: "center" }}>
+              <img 
+                src={relatorioTransparenciaImg} 
+                alt="Relatório de Transparência Salarial" 
+                style={{ margin: '150px 0', maxWidth: '100%' }} 
+              />
               <img src={des1} alt="Certificado ISO 39001"  />
               <img src={des2} alt="Certificado ISO 39001"  />
               <img src={des3} alt="Certificado ISO 39001"  />

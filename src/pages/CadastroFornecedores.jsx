@@ -8,7 +8,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from ".
 import Topbar from "../components/home/TopBar";
 import HomeHeader from "../components/home/HomeHeader";
 import HomeFooter from "../components/home/HomeFooter";
-import manualFornecedorPDF from "../assets/documentos/manualFornecedor.pdf";
+import manualFornecedorPDF from "../assets/documentos/manual-fornecedor.pdf";
 import "../styles/CadastroFornecedores.css";
 
 export default function CadastroFornecedores() {
@@ -117,7 +117,7 @@ export default function CadastroFornecedores() {
                     </div>
                     <div>
                       <label className="cadastroforn-label">Área de Atuação *</label>
-                      <Select value={formData.areaAtuacao} onValueChange={(val) => setFormData({...formData, areaAtuacao: val})}>
+                      <Select value={formData.areaAtuacao} onValueChange={(val) => setFormData(prev => ({ ...prev, areaAtuacao: val }))}>
                         <SelectTrigger>
                           <SelectValue placeholder="Selecione" />
                         </SelectTrigger>

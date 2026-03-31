@@ -292,7 +292,7 @@
 .contact-form-map-section {
   padding-top: 5rem;
   padding-bottom: 5rem;
-  color: #e0f2fe; /* Cor de texto padrão para esta seção */
+  color: #1e293b; /* Cor de texto escura para contraste */
 }
 
 .contact-form-map-grid {
@@ -335,25 +335,25 @@
   display: block;
   font-size: 0.95rem;
   font-weight: 500;
-  color: #e0f2fe; /* Label em branco/azul bem claro */
+  color: #374151; /* Label em cinza escuro */
   margin-bottom: 0.5rem;
 }
 
 /* Estilo para Inputs e Textareas */
-.input, .textarea {
+.contact-form-map-section .input, .contact-form-map-section .textarea {
   display: block;
   width: 100%;
   padding: 0.75rem 1rem;
   font-size: 1rem;
   line-height: 1.5;
-  color: #e0f2fe; /* Texto do input em branco/azul claro */
-  background-color: #2d3748; /* Fundo dos inputs mais escuro, mas não preto */
-  border: 1px solid #4a5568; /* Borda sutil */
+  color: #1e293b; /* Texto escuro */
+  background-color: #ffffff; /* Fundo branco */
+  border: 1px solid #d1d5db; /* Borda visível */
   border-radius: 0.5rem;
   transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
-.input::placeholder, .textarea::placeholder {
+.contact-form-map-section .input::placeholder, .contact-form-map-section .textarea::placeholder {
     color: #a0aec0; /* Cor do placeholder */
 }
 

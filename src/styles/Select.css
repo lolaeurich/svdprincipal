@@ -5,6 +5,12 @@
   font-size: 1rem;
   background: #fff;
   cursor: pointer;
+  color: #1e293b;
+}
+
+.custom-select option {
+  color: #1e293b;
+  background-color: #fff;
 }
 
 .custom-select:focus {
